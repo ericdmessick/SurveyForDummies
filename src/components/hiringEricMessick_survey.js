@@ -4,7 +4,7 @@ import * as Survey from 'survey-react';
 
 var surveyJSON = {
  clearInvisibleValues: true,
- completedHtml: "<h2>That concludes your</h3>\n<h1>Hiring Eric Messick for Dummies Survey</h1>\n</br>\n<h3>If you provided an employment lead, Thank you.</h3>\n<p>I won't let your information go to waste.  I promise you, I will reach out shortly.</p><p>I'll probably wait <strong>48 hours</strong>, as to not look desperate.</p>\n</br>\n<h3>In the mean time, do you wanna have some fun?</h3>\n<p>Take the survey again. Play around.*</p>\n</br>\n<a href=\"javascript:history.go(0);\">Click here to restart the survey.</a>\n<p>*Hint: Pretend <i>not</i> to be an interested employer.  Answer <i>No</i> as much as possible.</p>\n</br>\n<h3>And to the participants who did not provide a lead, or were not employers, recruiters, or the like,</h3>\n<p>You can retake the survey too.*  Pretend to be an employer, if you're not.</p>\n<p>Just please, please, don't send me a false lead to an employer at the end.</p>\n<p>That's just mean, especially, since I will email them and claim you referred me to them.  It'll just be awkward for everyone.</p>\n</br>\n<a href=\"javascript:history.go(0);\">Click here to restart the survey.</a>\n<p>*I'm just assuming you are a coder who wants to see how things work</p>",
+ completedHtml: "<div class=\"results_container\">\n<h1>Congrats!</h1>\n<h2>You finished the survey.</h3>\n</br>\n<h4>If you provided an employment lead,</br>Thank you!</h4>\n<p>I promise you, I won't let your information go to waste.  I will reach out shortly.*</p>\n<p>In the mean time, wanna have some fun?</p>\n<p>Take the survey again. Play around.**</p>\n<a href=\"javascript:history.go(0);\">Click to retake Survey for Dummies.</a>\n<p class=\"footnote\"  style=\"margin-bottom: 2px;\">*I'll probably wait <strong>48 hours</strong>, as to not look desperate, though.</p>\n<p class=\"footnote\">**Hint: Pretend <i>not</i> to be an interested employer.  Answer <i>No</i> as much as possible.</p>\n</br>\n<h4>To the participants who did not provide a lead, or were not employers, recruiters, or the like:</h4>\n<p>You can retake the survey too.*</p>\n<p><i>Pretend</i> to be an employer, if you're not.</p>\n<p>Just please don't send me a false lead at the end.  That's just mean, not to mention awkward for everyone, since I <strong>will</strong> email them and claim you as the referral.</p>\n<a href=\"javascript:history.go(0);\">Click to retake Survey for Dummies.</a>\n<p class=\"footnote\">*I'm just assuming you are a coder who wants to see how things work</p>\n</div>",
  goNextPageAutomatic: true,
  locale: "en",
  pageNextText: "Next",
@@ -204,13 +204,8 @@ var surveyJSON = {
    questions: [
     {
      type: "html",
-     name: "youreAWinner",
-     html: "<h3>Not that I'm a prize pig or anything</h3><p>But, this is exactly the foot-in-the-door I am looking for</p>"
-    },
-    {
-     type: "html",
-     name: "fifthElement",
-     html: "<p>*Quote from the 5th Element.  No big deal</p>"
+     html: "<div class=\"results_container\"><h3>Not that I'm a prize pig or anything</h3><p>But, this is exactly the foot-in-the-door I am looking for</p>\n\n<p class=\"footnote\">*Quote from the 5th Element.  No big deal</p>\n</div>",
+     name: "youreAWinner"
     }
    ],
    title: "\"YOU'RE A WINNER!\"*",
@@ -223,6 +218,9 @@ var surveyJSON = {
    questions: [
     {
      type: "checkbox",
+     name: "neededLanguages",
+     title: "What languages, frameworks, or libraries do you need?",
+     isRequired: true,
      choices: [
       {
        value: "1",
@@ -301,11 +299,8 @@ var surveyJSON = {
        text: "And others"
       }
      ],
-     isRequired: true,
-     name: "neededLanguages",
      otherText: "Other",
-     storeOthersAsComment: false,
-     title: "What languages, frameworks, or libraries do you need?"
+     storeOthersAsComment: false
     },
     {
      type: "comment",
@@ -327,8 +322,8 @@ var surveyJSON = {
    questions: [
     {
      type: "html",
-     name: "checkBack",
-     html: "<h3>I appreciate you letting me know what you need</h3><p>Tell you what, check back in a few months</p><p><strong>I may surprise you.</strong></p>"
+     html: "<h3>I appreciate you letting me know what you need</h3><p>Tell you what, check back in a few months</p><p><strong>I may surprise you.</strong></p>",
+     name: "checkBack"
     }
    ],
    title: "I hear you, and...",
@@ -393,8 +388,8 @@ var surveyJSON = {
    questions: [
     {
      type: "html",
-     name: "question3",
-     html: "<h3>Look at this kitten and think about your life.</h3><p>If you think might change your mind</p>"
+     html: "<h3>Look at this kitten and think about your life.</h3><p>If you think might change your mind</p>",
+     name: "question3"
     }
    ],
    title: "Well, that's just plain mean.",
@@ -459,13 +454,13 @@ var surveyJSON = {
    questions: [
     {
      type: "html",
-     name: "gitLink",
-     html: "<h3>First, click the link.</h3><p>But then, come right back and finish 'cause I didn't Javascript this piece.</p><a target=\"_blank\" href=\"\">To the GitHub</a>"
+     html: "<h3>First, click the link.</h3><p>But then, come right back and finish 'cause I didn't Javascript this piece.</p><a target=\"_blank\" href=\"\">To the GitHub</a>",
+     name: "gitLink"
     },
     {
      type: "html",
-     name: "question9",
-     html: "<h3>Then, give send me the 411.</h3>"
+     html: "<h3>Then, give send me the 411.</h3>",
+     name: "question9"
     },
     {
      type: "text",
@@ -552,8 +547,8 @@ var surveyJSON = {
    questions: [
     {
      type: "html",
-     name: "justGit",
-     html: "<h3>And good luck.</h3><p>Psst.  Click the link.</p><a target=\"_blank\" href=\"\">Here's the git</a>"
+     html: "<h3>And good luck.</h3><p>Psst.  Click the link.</p><a target=\"_blank\" href=\"\">Here's the git</a>",
+     name: "justGit"
     }
    ],
    title: "May the Code be with You.",
@@ -566,8 +561,8 @@ var surveyJSON = {
    questions: [
     {
      type: "html",
-     name: "endForYou",
-     html: "<h3>This is sort of the end of the line for you then.</h3>"
+     html: "<div class=\"results_container\"><h3>This is sort of the end of the line for you then.</h3></div>",
+     name: "endForYou"
     }
    ],
    title: "Okay. Well...",
@@ -621,8 +616,8 @@ var surveyJSON = {
     },
     {
      type: "html",
-     name: "nuke",
-     html: "<p>*Warning:  Nerd Alert! \"Nuke\" is the fictional drug from RoboCop 2.</p>"
+     html: "<p class=\"footnote\">*Warning:  Nerd Alert! \"Nuke\" is the fictional drug from RoboCop 2.</p>",
+     name: "nuke"
     }
    ],
    title: "Do you just really like doing random surveys?",
@@ -635,8 +630,8 @@ var surveyJSON = {
    questions: [
     {
      type: "html",
-     name: "likeSurveys",
-     html: "<h3>This is just one survey, and will probably not quench your survey thirst.</h3><p>So, here is a list of survey sites to tide you over.</p>\n<ul>\n<li><a href=\"http://www.dumb.com/polls\">Dumb</a></li>\n<li><a href=\"http://tjshome.com/survey/takesurvey.php?id=13537\">TJ's Home</a></li>\n<li><a href=\"http://www.quibblo.com/take/survey\">Quibblo</a></li>\n<li><a href=\"https://www.quotev.com/surveys/Fun\">Quotev</a></li>\n<li><a href=\"http://www.quizopplis.com\">Quizopolis</a></li>\n<li><a href=\"http://weirdpoll.com\">Weird Poll</a></li>\n<li><a href=\"http://www.wonderpolls.com\">Wonder Polls</a></li>\n\n</ul>"
+     html: "<div class=\"results_container\">\n<h3>This is just one survey, and will probably not quench your survey thirst.</h3><p>So, here is a list of survey sites to tide you over.</p>\n<ul>\n<li><a href=\"http://www.dumb.com/polls\">Dumb</a></li>\n<li><a href=\"http://tjshome.com/survey/takesurvey.php?id=13537\">TJ's Home</a></li>\n<li><a href=\"http://www.quibblo.com/take/survey\">Quibblo</a></li>\n<li><a href=\"https://www.quotev.com/surveys/Fun\">Quotev</a></li>\n<li><a href=\"http://www.quizopplis.com\">Quizopolis</a></li>\n<li><a href=\"http://weirdpoll.com\">Weird Poll</a></li>\n<li><a href=\"http://www.wonderpolls.com\">Wonder Polls</a></li>\n\n</ul>\n</div>",
+     name: "likeSurveys"
     }
    ],
    title: "Okay, well...",
@@ -648,8 +643,8 @@ var surveyJSON = {
    questions: [
     {
      type: "html",
-     name: "cryingOutLoad",
-     html: "<h3>Just tell me.  Tell me.</h3>"
+     html: "<h3>Just tell me.  Tell me.</h3>",
+     name: "cryingOutLoad"
     },
     {
      type: "text",
@@ -691,8 +686,8 @@ var surveyJSON = {
    questions: [
     {
      type: "html",
-     name: "imInInstructions",
-     html: "<p>Reach out and give me the deets of when, where, and do I need a jacket?</p>"
+     html: "<p>Reach out and give me the deets of when, where, and do I need a jacket?</p>",
+     name: "imInInstructions"
     },
     {
      type: "text",
@@ -735,8 +730,8 @@ var surveyJSON = {
    questions: [
     {
      type: "html",
-     name: "emailInstructions",
-     html: "<h3>You know what to do.</h3>\n<p>Assuming that you're not a Platypus and never seen the internet before.</p>\n</br>\n<p>I sincerely apologize to all Platypus enthusiasts out there who are offended by that thoughtless comment about the ineptitude of the Platypi. I respect the noble Platypus, and it is not my intention to slight these stupid creatures in any way. Thank you again.**</p>\n"
+     html: "<h3>You know what to do.</h3>\n<p>Assuming that you're not a Platypus and never seen the internet before.</p>\n</br>\n<p>I sincerely apologize to all Platypus enthusiasts out there who are offended by that thoughtless comment about the ineptitude of the Platypi. I respect the noble Platypus, and it is not my intention to slight these stupid creatures in any way. Thank you again.**</p>\n",
+     name: "emailInstructions"
     },
     {
      type: "text",
@@ -813,8 +808,8 @@ var surveyJSON = {
     },
     {
      type: "html",
-     name: "godAmongInsects",
-     html: "<p>*X-Men quote.  No big deal.</p>\n<p>**An apt apprehensive, and partially alliterate, unapologetic appropriation of the \"Platypi Apology.\"</p>"
+     html: "<p class=\"footnote\">*X-Men quote.  No big deal.</p>\n<p class=\"footnote\">**An apt apprehensive, and partially alliterate, unapologetic appropriation of the \"Platypi Apology.\"</p>",
+     name: "godAmongInsects"
     }
    ],
    title: "\"You are a god among insects.\"*",
