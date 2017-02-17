@@ -7,7 +7,7 @@ export default class Header extends Component {
         <div className="header_container">
             
             <div className="header_content">    
-                <h2 className="black"><strong>Making Bosses Job's Easier</strong></h2>
+                <h2 className="black"><strong>Making Boss's Jobs Easier</strong></h2>
                 
                 <div className="header_container-black">
                     
