@@ -1,31 +1,157 @@
+.white {
+    color: #fff;
+}
+
+.black {
+    color: #000;
+}
+
 .App {
 /*  padding: 20px;*/
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.header_container {
+    background-color: #ffff00;
+/*    height: 500px;*/
+    padding: 5px 0 5%;
 }
 
-.App-header {
-  background-color: #222;
-  height: 200px;
-  padding: 20px;
-  color: white;
+.header_content {
+    -webkit-transform: skewY(-5deg);
+    -ms-transform: skewY(-5deg);
+    transform: skewY(-5deg);
+}
+
+.header_content > h2 {
+    margin: 20px 20px 10px;
+}
+
+.header_container-black {
+    background-color: #000;
+/*    height: 400px;*/
+    padding: 10px 0 0;
+    color: #000;
     text-align: center;
+    margin-bottom: 2%;
 }
 
-.App-intro {
-  font-size: large;
-    padding: 20px;
+.header_container-black h3 {
+    font-weight: 600;
+    margin: 10px 0 5px;
+    font-family: 'Arial Black', 'Open Sans', sans-serif;
 }
+
+.header_container-black h1 {
+    font-weight: 800;
+    font-size: 76px;
+    font-family: 'Arial Black', 'Open Sans', sans-serif;
+    margin: 5px 0 2px;
+}
+
+.header_logo {
+    width: 60%;
+    margin: 2px auto 20px;
+}
+
+.header_blue-container {
+    background-color: #0072bc;
+    text-align: right;
+    padding: 1px;
+}
+
+.header_blue-container h2 {
+    margin: 1px 20px;
+    font-size: 26px;
+}
+
+/*----------------SURVEY STYLES-----------------*/
 
 .App-survey {
     margin: 20px auto;
     padding: 20px;
+    width: 560px;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.sv_p_title {
+    font-weight: 600;
+    margin: 10px 0 5px;
 }
+
+.sv_q_title {
+    margin: 10px 0 5px;
+}
+
+.sv_qcbc {
+    margin: 10px 0;
+}
+
+
+
+/*------------------RADIO STYLES---------------*/
+.sv_q_radiogroup {
+    width: 100%;
+}
+
+input[type=radio] {
+    margin-bottom: 4px;
+    float: left;
+    display: inline-block;
+}
+
+label.sv_q_radiogroup span {
+    margin-left: 10px !important;
+    width: 90%;
+    float: left;
+    display: inline-block;
+    font-weight: 500;
+    
+}
+
+/*--------------END RADIO STYLES---------------*/
+
+
+
+/*------------------CHECKBOX STYLES---------------*/
+div.sv_q_checkbox {
+    width: 33.333% !important;
+    font-weight: 500;
+    /* margin: 0 !important; */
+    display: inline-block;
+}
+
+label.sv_q_checkbox {
+    font-weight: 500;
+}
+
+input[type=checkbox] {
+    height: 15px;
+    width: 15px;
+    margin: 4px 6px 0 0 !important;
+}
+
+textarea[type=text] {
+    margin-bottom: 15px;
+}
+
+/*--------------END CHECKBOX STYLES---------------*/
+
+
+
+/*--------------NAVIGATION STYLES---------------*/
+
+.sv_nav {
+    padding-left: 22px;
+}
+
+/*--------------END NAVIGATION STYLES---------------*/
+
+
+
+/*--------------RESULT PAGE STYLES---------------*/
+
+p:last-of-type {
+    margin-bottom: 15px;
+}
+
+/*--------------END RESULT PAGE STYLES---------------*/
+
