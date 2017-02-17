@@ -26,7 +26,7 @@
     margin: 20px 20px 10px;
 }
 
-@media only screen and (max-width : 376px) {
+@media only screen and (max-width : 414px) {
    .header_content > h2 {
         font-size: 18px;
     } 
@@ -47,10 +47,10 @@
     font-family: 'Arial Black', 'Open Sans', sans-serif;
 }
 
-@media only screen and (max-width : 376px) {
+@media only screen and (max-width : 414px) {
    .header_container-black h3 {
        font-size: 17px;
-       margin: 10px 0 1px;
+       margin: 10px 0 1px -25%;
     }
 }
 
@@ -61,7 +61,7 @@
     margin: 5px 0 2px;
 }
 
-@media only screen and (max-width : 376px) {
+@media only screen and (max-width : 414px) {
    .header_container-black h1 {
         font-size: 50px;
        margin: 1px 0 2px;
@@ -73,7 +73,7 @@
     margin: 2px auto 20px;
 }
 
-@media only screen and (max-width : 376px) {
+@media only screen and (max-width : 414px) {
    .header_logo {
         width: 88%;
     }
@@ -90,7 +90,7 @@
     font-size: 26px;
 }
 
-@media only screen and (max-width : 376px) {
+@media only screen and (max-width : 414px) {
    .header_blue-container h2 {
         font-size: 18px;
     }
@@ -102,6 +102,12 @@
     margin: 20px auto;
     padding: 20px;
     width: 560px;
+}
+
+@media only screen and (max-width : 414px) {
+   .App-survey {
+        width: 100%;
+    }
 }
 
 .sv_p_title {
