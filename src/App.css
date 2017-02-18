@@ -178,6 +178,20 @@ textarea[type=text] {
 
 /*--------------END CHECKBOX STYLES---------------*/
 
+/*------------------FORM STYLES---------------*/
+@media only screen and (max-width : 414px) {
+    .sv_q {
+        width: 100% !important;
+        padding-right: 0px !important;
+    }
+    
+    input[type=text], input[type=email] {
+        width: 100%;
+    }
+}
+
+/*--------------END FORM STYLES---------------*/
+
 
 
 /*--------------NAVIGATION STYLES---------------*/
