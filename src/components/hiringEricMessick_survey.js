@@ -808,7 +808,7 @@ var surveyJSON = {
     },
     {
      type: "html",
-     html: "<p class=\"footnote\">*X-Men quote.  No big deal.</p>\n<p class=\"footnote\">**An apt apprehensive, and partially alliterate, unapologetic appropriation of the \"Platypi Apology.\"</p>",
+     html: "<p class=\"footnote\"  style=\"margin-bottom: 2px;\">*X-Men quote.  No big deal.</p>\n<p class=\"footnote\">**An apt apprehensive, and partially alliterate, unapologetic appropriation of the \"Platypi Apology.\"</p>",
      name: "godAmongInsects"
     }
    ],
