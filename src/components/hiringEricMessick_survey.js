@@ -204,8 +204,43 @@ var surveyJSON = {
    questions: [
     {
      type: "html",
-     html: "<div class=\"results_container\"><h3>Not that I'm a prize pig or anything</h3><p>But, this is exactly the foot-in-the-door I am looking for</p>\n\n<p class=\"footnote\">*Quote from the 5th Element.  No big deal</p>\n</div>",
+     html: "<div class=\"results_container\"><h3>Not that I'm a prize pig...</h3><p>But, this is exactly the foot-in-the-door I am looking for.</p>",
      name: "youreAWinner"
+    },
+    {
+     type: "text",
+     commentText: "WHAT IS THIS?",
+     isRequired: true,
+     name: "userName",
+     placeHolder: "Mary Q. Contrarian",
+     title: "Your Name",
+     width: "50%"
+    },
+    {
+     type: "text",
+     inputType: "email",
+     isRequired: true,
+     name: "userEmail",
+     placeHolder: "boringNameEmail@company.com",
+     startWithNewLine: false,
+     title: "Your Email",
+     validators: [
+      {
+       type: "email"
+      }
+     ],
+     width: "50%"
+    },
+    {
+     type: "comment",
+     name: "userComment",
+     placeHolder: "You want to pay you a millionny dollars an hour to index all the cat videos on the internet!",
+     title: "What's the inside info?"
+    },
+    {
+     type: "html",
+     html: "<p class=\"footnote\">*Quote from the 5th Element.  No big deal</p>\n</div>",
+     name: "finePrint"
     }
    ],
    title: "\"YOU'RE A WINNER!\"*",
@@ -464,71 +499,71 @@ var surveyJSON = {
     },
     {
      type: "text",
-     name: "userCompany",
-     width: "33%",
-     title: "Your Company (if applicable)",
      commentText: "WHAT IS THIS?",
      isRequired: true,
-     placeHolder: "The Best Inc"
+     name: "userCompany",
+     placeHolder: "The Best Inc",
+     title: "Your Company (if applicable)",
+     width: "33%"
     },
     {
      type: "text",
+     commentText: "WHAT IS THIS?",
+     isRequired: true,
      name: "userName",
-     width: "33%",
+     placeHolder: "Hubert Humperdink",
      startWithNewLine: false,
      title: "Your Name",
-     commentText: "WHAT IS THIS?",
-     isRequired: true,
-     placeHolder: "Hubert Humperdink"
+     width: "33%"
     },
     {
      type: "text",
+     inputType: "email",
+     isRequired: true,
      name: "userEmail",
-     width: "33%",
+     placeHolder: "emailMadeWhenIWas14@regrets.com",
      startWithNewLine: false,
      title: "Your Email",
-     isRequired: true,
      validators: [
       {
        type: "email"
       }
      ],
-     inputType: "email",
-     placeHolder: "emailmadewhenIwas14@regrets.com"
+     width: "33%"
     },
     {
      type: "text",
-     name: "theirCompany",
-     width: "33%",
-     title: "Their Company",
      commentText: "WHAT IS THIS?",
      isRequired: true,
-     placeHolder: "Awesome LLC"
+     name: "theirCompany",
+     placeHolder: "Awesome LLC",
+     title: "Their Company",
+     width: "33%"
     },
     {
      type: "text",
+     commentText: "WHAT IS THIS?",
+     isRequired: true,
      name: "theirName",
-     width: "33%",
+     placeHolder: "Bill Jobs-Gates",
      startWithNewLine: false,
      title: "Their Name",
-     commentText: "WHAT IS THIS?",
-     isRequired: true,
-     placeHolder: "Bill Jobs-Gates"
+     width: "33%"
     },
     {
      type: "text",
+     inputType: "email",
+     isRequired: true,
      name: "theirEmail",
-     width: "33%",
+     placeHolder: "boringEmailAddress@company.com",
      startWithNewLine: false,
      title: "Their Email",
-     isRequired: true,
      validators: [
       {
        type: "email"
       }
      ],
-     inputType: "email",
-     placeHolder: "boringemailaddress@company.com"
+     width: "33%"
     },
     {
      type: "comment",
@@ -648,27 +683,27 @@ var surveyJSON = {
     },
     {
      type: "text",
-     name: "yourName",
-     width: "50%",
-     title: "Your Name",
      commentText: "WHAT IS THIS?",
      isRequired: true,
-     placeHolder: "Mary Q. Contrarian"
+     name: "yourName",
+     placeHolder: "Mary Q. Contrarian",
+     title: "Your Name",
+     width: "50%"
     },
     {
      type: "text",
-     name: "yourEmail",
-     width: "50%",
+     inputType: "email",
+     isRequired: true,
+     name: "userEmail",
+     placeHolder: "emailMadeWhenIWas14@regrets.com",
      startWithNewLine: false,
      title: "Your Email",
-     isRequired: true,
      validators: [
       {
        type: "email"
       }
      ],
-     inputType: "email",
-     placeHolder: "emailmadewhenIwas14@regrets.com"
+     width: "50%"
     },
     {
      type: "comment",
@@ -691,27 +726,27 @@ var surveyJSON = {
     },
     {
      type: "text",
-     name: "userName",
-     width: "50%",
-     title: "Your Name",
      commentText: "WHAT IS THIS?",
      isRequired: true,
-     placeHolder: "Come with me, if you want to live."
+     name: "userName",
+     placeHolder: "Come with me, if you want to live.",
+     title: "Your Name",
+     width: "50%"
     },
     {
      type: "text",
+     inputType: "email",
+     isRequired: true,
      name: "userEmail",
-     width: "50%",
+     placeHolder: "cher@aol.com",
      startWithNewLine: false,
      title: "Your Email",
-     isRequired: true,
      validators: [
       {
        type: "email"
       }
      ],
-     inputType: "email",
-     placeHolder: "cher@aol.com"
+     width: "50%"
     },
     {
      type: "comment",
@@ -735,70 +770,70 @@ var surveyJSON = {
     },
     {
      type: "text",
-     name: "userCompany",
-     width: "33%",
-     title: "Your Company (if applicable)",
      commentText: "WHAT IS THIS?",
-     placeHolder: "The Best Inc"
+     name: "userCompany",
+     placeHolder: "The Best Inc",
+     title: "Your Company (if applicable)",
+     width: "33%"
     },
     {
      type: "text",
+     commentText: "WHAT IS THIS?",
+     isRequired: true,
      name: "userName",
-     width: "33%",
+     placeHolder: "Keyser Soze",
      startWithNewLine: false,
      title: "Your Name",
-     commentText: "WHAT IS THIS?",
-     isRequired: true,
-     placeHolder: "Keyser Soze"
+     width: "33%"
     },
     {
      type: "text",
+     inputType: "email",
+     isRequired: true,
      name: "userEmail",
-     width: "33%",
+     placeHolder: "emailMadeWhenIWas14@regrets.com",
      startWithNewLine: false,
      title: "Your Email",
-     isRequired: true,
      validators: [
       {
        type: "email"
       }
      ],
-     inputType: "email",
-     placeHolder: "emailmadewhenIwas14@regrets.com"
+     width: "33%"
     },
     {
      type: "text",
-     name: "theirCompany",
-     width: "33%",
-     title: "Their Company",
      commentText: "WHAT IS THIS?",
      isRequired: true,
-     placeHolder: "Awesome LLC"
+     name: "theirCompany",
+     placeHolder: "Awesome LLC",
+     title: "Their Company",
+     width: "33%"
     },
     {
      type: "text",
+     commentText: "WHAT IS THIS?",
+     isRequired: true,
      name: "theirName",
-     width: "33%",
+     placeHolder: "Bill Jobs-Gates",
      startWithNewLine: false,
      title: "Their Name",
-     commentText: "WHAT IS THIS?",
-     isRequired: true,
-     placeHolder: "Bill Jobs-Gates"
+     width: "33%"
     },
     {
      type: "text",
+     inputType: "email",
+     isRequired: true,
      name: "theirEmail",
-     width: "33%",
+     placeHolder: "boringEmailAddress@company.com",
      startWithNewLine: false,
      title: "Their Email",
-     isRequired: true,
      validators: [
       {
        type: "email"
       }
      ],
-     inputType: "email",
-     placeHolder: "boringemailaddress@company.com"
+     width: "33%"
     },
     {
      type: "comment",
