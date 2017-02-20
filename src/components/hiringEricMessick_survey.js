@@ -16,29 +16,29 @@ var surveyJSON = {
    questions: [
     {
      type: "radiogroup",
-     name: "hiringManager",
-     startWithNewLine: false,
-     title: "Select the one that best applies.",
-     isRequired: true,
      choices: [
       {
        value: "1",
-       text: "Why, Yes I am!"
+       text: "Yes. Yes I am!"
       },
       {
        value: "2",
-       text: "Close...I work directly for a company and am in a position to bend the boss's ear."
+       text: "Close.  I work directly for a company and am in a position to bend the boss's ear."
       },
       {
        value: "3",
-       text: "I am a recruiter, looking for qualified individuals such as your self."
+       text: "I am a recruiter, looking for qualified individuals such as yourself."
       },
       {
        value: "4",
-       text: "Nope.  Not a hiring manager or a recruiter.  Guess again."
+       text: "Nope.  Not a hiring manager or a recruiter."
       }
      ],
-     otherText: "other"
+     isRequired: true,
+     name: "hiringManager",
+     otherText: "other",
+     startWithNewLine: false,
+     title: "Select the one that best applies."
     }
    ],
    title: "Are you a hiring manager or recruiter?"
@@ -49,9 +49,6 @@ var surveyJSON = {
    questions: [
     {
      type: "radiogroup",
-     name: "position",
-     title: "Choose the closest fit.",
-     isRequired: true,
      choices: [
       {
        value: "1",
@@ -62,7 +59,10 @@ var surveyJSON = {
        text: "Senior Developer or Management Position"
       }
      ],
-     otherText: "other"
+     isRequired: true,
+     name: "position",
+     otherText: "other",
+     title: "Choose the closest fit."
     }
    ],
    title: "What kind of position is the company looking to fill?",
@@ -75,9 +75,6 @@ var surveyJSON = {
    questions: [
     {
      type: "radiogroup",
-     name: "consider",
-     title: "Honestly, I'm not there yet.  Would you consider me for an Entry or Junior Level Position, if not now, when one opens up?",
-     isRequired: true,
      choices: [
       {
        value: "1",
@@ -88,7 +85,10 @@ var surveyJSON = {
        text: "No, I think we're done here.  Cool survey though."
       }
      ],
-     otherText: "other"
+     isRequired: true,
+     name: "consider",
+     otherText: "other",
+     title: "Honestly, I'm not there yet.  Would you consider me for an Entry or Junior Level Position, if not now, when one opens up?"
     }
    ],
    title: "Dadgummit.",
@@ -101,9 +101,6 @@ var surveyJSON = {
    questions: [
     {
      type: "radiogroup",
-     name: "references",
-     title: "Would you like a candidate with some awesome references?",
-     isRequired: true,
      choices: [
       {
        value: "1",
@@ -114,7 +111,10 @@ var surveyJSON = {
        text: "Nah, dude.  References are for posers and for people who talk during movies."
       }
      ],
-     otherText: "other"
+     isRequired: true,
+     name: "references",
+     otherText: "other",
+     title: "Would you like a candidate with some awesome references?"
     }
    ],
    title: "How about references?  ",
@@ -127,9 +127,6 @@ var surveyJSON = {
    questions: [
     {
      type: "radiogroup",
-     name: "liveAustin",
-     title: "You can't be in two places at once.",
-     isRequired: true,
      choices: [
       {
        value: "1",
@@ -140,7 +137,10 @@ var surveyJSON = {
        text: "No.  Too weird for me."
       }
      ],
-     otherText: "other"
+     isRequired: true,
+     name: "liveAustin",
+     otherText: "other",
+     title: "You can't be in two places at once."
     }
    ],
    title: "Are you located in Austin or the surrounding area?",
@@ -153,9 +153,6 @@ var surveyJSON = {
    questions: [
     {
      type: "radiogroup",
-     name: "knownLanguages",
-     title: "...a candidate who knows HTML5, CSS3, Javascript, JQuery, Wordpress, Node, React, Git, Photoshop, and...",
-     isRequired: true,
      choices: [
       {
        value: "1",
@@ -166,10 +163,13 @@ var surveyJSON = {
        text: "No"
       }
      ],
-     otherText: "other"
+     isRequired: true,
+     name: "knownLanguages",
+     otherText: "other",
+     title: "A candidate who knows HTML5, CSS3, Javascript, JQuery, Wordpress, Node, React, Git, Photoshop, and..."
     }
    ],
-   title: "And are you looking for...",
+   title: "And are you looking for:",
    visible: false,
    visibleIf: "{references}= 1 || {references}=2"
   },
@@ -179,9 +179,6 @@ var surveyJSON = {
    questions: [
     {
      type: "radiogroup",
-     name: "unknownLanguages",
-     title: "...is hungry to learn Angular, MySQL, Flux, or whatever you need?!",
-     isRequired: true,
      choices: [
       {
        value: "1",
@@ -192,10 +189,13 @@ var surveyJSON = {
        text: "No, I can't wait.  I need someone who knows other languages, libraries, or frameworks NOW!"
       }
      ],
-     otherText: "other"
+     isRequired: true,
+     name: "unknownLanguages",
+     otherText: "other",
+     title: "...who is hungry to learn more?!"
     }
    ],
-   title: "And who...",
+   title: "And...",
    visible: false,
    visibleIf: "{knownLanguages} = 1"
   },
@@ -357,7 +357,7 @@ var surveyJSON = {
    questions: [
     {
      type: "html",
-     html: "<h3>I appreciate you letting me know what you need</h3><p>Tell you what, check back in a few months</p><p><strong>I may surprise you.</strong></p>",
+     html: "<h3>I appreciate you letting me know what you need.</h3>\n<p>I use that last question to get a better consensus of what languages, frameworks, and libraries employers are looking for.  Then, I tailor my training accordingly.</p><p>When I am not working, I take courses on Udemy, Codecademy, and Code School, in conjunction with the documentation available on the developer's sites.  Typically, I try to create a project that allows me to flex my new muscles, and then submit them to other developer's for feedback.</p><p>Tell you what, check back in a few months.  <strong>I may surprise you.</strong></p>",
      name: "checkBack"
     }
    ],
@@ -371,9 +371,6 @@ var surveyJSON = {
    questions: [
     {
      type: "radiogroup",
-     name: "goodDeed",
-     title: "Do you know anyone who is hiring Web Developers in the area?  And if so, do you want to do me a solid and give me their info?  It could be your good deed for the day...",
-     isRequired: true,
      choices: [
       {
        value: "1",
@@ -384,7 +381,10 @@ var surveyJSON = {
        text: "I hate you! You shouldn't have capitalized \"Do\".  I hope you never get a job, Eric!"
       }
      ],
-     otherText: "other"
+     isRequired: true,
+     name: "goodDeed",
+     otherText: "other",
+     title: "Do you know anyone who is hiring Web Developers in the area?  And if so, do you want to do me a solid and give me their info?  It could be your good deed for the day..."
     }
    ],
    title: "Since you are here,",
@@ -397,9 +397,6 @@ var surveyJSON = {
    questions: [
     {
      type: "radiogroup",
-     name: "stumble",
-     title: "Did you just stumble upon this while Googling a survey coding example, using React, Redux, or Node?",
-     isRequired: true,
      choices: [
       {
        value: "1",
@@ -410,7 +407,10 @@ var surveyJSON = {
        text: "No"
       }
      ],
-     otherText: "other"
+     isRequired: true,
+     name: "stumble",
+     otherText: "other",
+     title: "Did you just stumble upon this while Googling a survey coding example, using React, Redux, or Node?"
     }
    ],
    title: "I know your struggle.",
@@ -423,8 +423,13 @@ var surveyJSON = {
    questions: [
     {
      type: "html",
-     html: "<h3>Look at this kitten and think about your life.</h3><p>If you think might change your mind</p>",
+     html: "<h3>Look at this kitten and think about your life.</h3>",
      name: "question3"
+    },
+    {
+     type: "html",
+     html: "<img src=\"../kittens/cuteKitten01.jpg\" alt=\"Cute Kitten\" title=\"Cute Kitten\">",
+     name: "kitten"
     }
    ],
    title: "Well, that's just plain mean.",
@@ -437,9 +442,6 @@ var surveyJSON = {
    questions: [
     {
      type: "radiogroup",
-     name: "wantGit",
-     title: "Would you like to visit my GitHub page so you can get the code?",
-     isRequired: true,
      choices: [
       {
        value: "1",
@@ -450,7 +452,10 @@ var surveyJSON = {
        text: "No"
       }
      ],
-     otherText: "other"
+     isRequired: true,
+     name: "wantGit",
+     otherText: "other",
+     title: "Would you like to visit my GitHub page so you can get the code?"
     }
    ],
    title: "Awesome!",
@@ -463,9 +468,6 @@ var surveyJSON = {
    questions: [
     {
      type: "radiogroup",
-     name: "getGit",
-     title: "If you know anyone who is hiring in Austin, Texas, would you send me their info and help me get a job.  If not, it's cool.  You can still have the link.",
-     isRequired: true,
      choices: [
       {
        value: "1",
@@ -476,7 +478,10 @@ var surveyJSON = {
        text: "I don't know anyone.  Just the link, please."
       }
      ],
-     otherText: "other"
+     isRequired: true,
+     name: "getGit",
+     otherText: "other",
+     title: "If you know anyone who is hiring in Austin, Texas, would you send me their info and help me get a job.  If not, it's cool.  You can still have the link."
     }
    ],
    title: "Since you are here,",
@@ -609,9 +614,6 @@ var surveyJSON = {
    questions: [
     {
      type: "radiogroup",
-     name: "timeTravel",
-     title: "You are a time traveler looking to assemble a rag tag crew, and needing a lovable roguish jack of all trades to be the heart and glue that holds the team together?",
-     isRequired: true,
      choices: [
       {
        value: "1",
@@ -622,7 +624,10 @@ var surveyJSON = {
        text: "Nope. Also, isn't the purpose of this survey to get a job?  You're kind of an idiot."
       }
      ],
-     otherText: "other"
+     isRequired: true,
+     name: "timeTravel",
+     otherText: "other",
+     title: "You are a time traveler looking to assemble a rag tag crew, and needing a lovable roguish jack of all trades to be the heart and glue that holds the team together?"
     }
    ],
    title: "Oh, I know why you are here.",
@@ -634,9 +639,6 @@ var surveyJSON = {
    questions: [
     {
      type: "radiogroup",
-     name: "likeSurveys",
-     title: "Tell the truth.  This is a \"safe space\".",
-     isRequired: true,
      choices: [
       {
        value: "1",
@@ -647,7 +649,10 @@ var surveyJSON = {
        text: "No.  Give up, yet?"
       }
      ],
-     otherText: "other"
+     isRequired: true,
+     name: "likeSurveys",
+     otherText: "other",
+     title: "Tell the truth.  This is a \"safe space\"."
     },
     {
      type: "html",

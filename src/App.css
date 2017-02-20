@@ -10,6 +10,10 @@
     font-size: 10px;
 }
 
+.sv_q_erbox {
+    color: red;
+}
+
 .App {
 /*  padding: 20px;*/
 }
