@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 //import ReactDOM from 'react-dom';
 import * as Survey from 'survey-react';
+//must import images with create-react-app
+
+var kitten = "../kittens/cuteKitten01.jpg";
+
 
 var surveyJSON = {
  clearInvisibleValues: true,
@@ -428,7 +432,7 @@ var surveyJSON = {
     },
     {
      type: "html",
-     html: "<img src=\"../kittens/cuteKitten01.jpg\" alt=\"Cute Kitten\" title=\"Cute Kitten\">",
+     html: kitten,
      name: "kitten"
     }
    ],
