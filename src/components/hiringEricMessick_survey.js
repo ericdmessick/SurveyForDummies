@@ -3,9 +3,6 @@ import React, { Component } from 'react';
 import * as Survey from 'survey-react';
 //must import images with create-react-app
 
-var kitten = "../kittens/cuteKitten01.jpg";
-
-
 var surveyJSON = {
  clearInvisibleValues: true,
  completedHtml: "<div class=\"results_container\">\n<h1>Congrats!</h1>\n<h2>You finished the survey.</h3>\n</br>\n<h4>If you provided an employment lead,</br>Thank you!</h4>\n<p>I promise you, I won't let your information go to waste.  I will reach out shortly.*</p>\n<p>In the mean time, wanna have some fun?</p>\n<p>Take the survey again. Play around.**</p>\n<a href=\"javascript:history.go(0);\">Click to retake Survey for Dummies.</a>\n<p class=\"footnote\"  style=\"margin-bottom: 2px;\">*I'll probably wait <strong>48 hours</strong>, as to not look desperate, though.</p>\n<p class=\"footnote\">**Hint: Pretend <i>not</i> to be an interested employer.  Answer <i>No</i> as much as possible.</p>\n</br>\n<h4>To the participants who did not provide a lead, or were not employers, recruiters, or the like:</h4>\n<p>You can retake the survey too.*</p>\n<p><i>Pretend</i> to be an employer, if you're not.</p>\n<p>Just please don't send me a false lead at the end.  That's just mean, not to mention awkward for everyone, since I <strong>will</strong> email them and claim you as the referral.</p>\n<a href=\"javascript:history.go(0);\">Click to retake Survey for Dummies.</a>\n<p class=\"footnote\">*I'm just assuming you are a coder who wants to see how things work</p>\n</div>",
@@ -20,6 +17,10 @@ var surveyJSON = {
    questions: [
     {
      type: "radiogroup",
+     name: "hiringManager",
+     startWithNewLine: false,
+     title: "Select the one that best applies.",
+     isRequired: true,
      choices: [
       {
        value: "1",
@@ -38,11 +39,7 @@ var surveyJSON = {
        text: "Nope.  Not a hiring manager or a recruiter."
       }
      ],
-     isRequired: true,
-     name: "hiringManager",
-     otherText: "other",
-     startWithNewLine: false,
-     title: "Select the one that best applies."
+     otherText: "other"
     }
    ],
    title: "Are you a hiring manager or recruiter?"
@@ -53,6 +50,9 @@ var surveyJSON = {
    questions: [
     {
      type: "radiogroup",
+     name: "position",
+     title: "Choose the closest fit.",
+     isRequired: true,
      choices: [
       {
        value: "1",
@@ -63,10 +63,7 @@ var surveyJSON = {
        text: "Senior Developer or Management Position"
       }
      ],
-     isRequired: true,
-     name: "position",
-     otherText: "other",
-     title: "Choose the closest fit."
+     otherText: "other"
     }
    ],
    title: "What kind of position is the company looking to fill?",
@@ -79,6 +76,9 @@ var surveyJSON = {
    questions: [
     {
      type: "radiogroup",
+     name: "consider",
+     title: "Honestly, I'm not there yet.  Would you consider me for an Entry or Junior Level Position, if not now, when one opens up?",
+     isRequired: true,
      choices: [
       {
        value: "1",
@@ -89,10 +89,7 @@ var surveyJSON = {
        text: "No, I think we're done here.  Cool survey though."
       }
      ],
-     isRequired: true,
-     name: "consider",
-     otherText: "other",
-     title: "Honestly, I'm not there yet.  Would you consider me for an Entry or Junior Level Position, if not now, when one opens up?"
+     otherText: "other"
     }
    ],
    title: "Dadgummit.",
@@ -105,6 +102,9 @@ var surveyJSON = {
    questions: [
     {
      type: "radiogroup",
+     name: "references",
+     title: "Would you like a candidate with some awesome references?",
+     isRequired: true,
      choices: [
       {
        value: "1",
@@ -115,10 +115,7 @@ var surveyJSON = {
        text: "Nah, dude.  References are for posers and for people who talk during movies."
       }
      ],
-     isRequired: true,
-     name: "references",
-     otherText: "other",
-     title: "Would you like a candidate with some awesome references?"
+     otherText: "other"
     }
    ],
    title: "How about references?  ",
@@ -131,6 +128,9 @@ var surveyJSON = {
    questions: [
     {
      type: "radiogroup",
+     name: "liveAustin",
+     title: "You can't be in two places at once.",
+     isRequired: true,
      choices: [
       {
        value: "1",
@@ -141,10 +141,7 @@ var surveyJSON = {
        text: "No.  Too weird for me."
       }
      ],
-     isRequired: true,
-     name: "liveAustin",
-     otherText: "other",
-     title: "You can't be in two places at once."
+     otherText: "other"
     }
    ],
    title: "Are you located in Austin or the surrounding area?",
@@ -157,6 +154,9 @@ var surveyJSON = {
    questions: [
     {
      type: "radiogroup",
+     name: "knownLanguages",
+     title: "A candidate who knows HTML5, CSS3, Javascript, JQuery, Wordpress, Node, React, Git, Photoshop, and...",
+     isRequired: true,
      choices: [
       {
        value: "1",
@@ -167,10 +167,7 @@ var surveyJSON = {
        text: "No"
       }
      ],
-     isRequired: true,
-     name: "knownLanguages",
-     otherText: "other",
-     title: "A candidate who knows HTML5, CSS3, Javascript, JQuery, Wordpress, Node, React, Git, Photoshop, and..."
+     otherText: "other"
     }
    ],
    title: "And are you looking for:",
@@ -183,6 +180,9 @@ var surveyJSON = {
    questions: [
     {
      type: "radiogroup",
+     name: "unknownLanguages",
+     title: "...who is hungry to learn more?!",
+     isRequired: true,
      choices: [
       {
        value: "1",
@@ -193,10 +193,7 @@ var surveyJSON = {
        text: "No, I can't wait.  I need someone who knows other languages, libraries, or frameworks NOW!"
       }
      ],
-     isRequired: true,
-     name: "unknownLanguages",
-     otherText: "other",
-     title: "...who is hungry to learn more?!"
+     otherText: "other"
     }
    ],
    title: "And...",
@@ -213,33 +210,33 @@ var surveyJSON = {
     },
     {
      type: "text",
+     name: "userName",
+     width: "50%",
+     title: "Your Name",
      commentText: "WHAT IS THIS?",
      isRequired: true,
-     name: "userName",
-     placeHolder: "Mary Q. Contrarian",
-     title: "Your Name",
-     width: "50%"
+     placeHolder: "Mary Q. Contrarian"
     },
     {
      type: "text",
-     inputType: "email",
-     isRequired: true,
      name: "userEmail",
-     placeHolder: "boringNameEmail@company.com",
+     width: "50%",
      startWithNewLine: false,
      title: "Your Email",
+     isRequired: true,
      validators: [
       {
        type: "email"
       }
      ],
-     width: "50%"
+     inputType: "email",
+     placeHolder: "boringNameEmail@company.com"
     },
     {
      type: "comment",
      name: "userComment",
-     placeHolder: "You want to pay you a millionny dollars an hour to index all the cat videos on the internet!",
-     title: "What's the inside info?"
+     title: "What's the inside info?",
+     placeHolder: "You want to pay you a millionny dollars an hour to index all the cat videos on the internet!"
     },
     {
      type: "html",
@@ -344,11 +341,11 @@ var surveyJSON = {
     {
      type: "comment",
      name: "inputLanguages",
-     placeHolder: "Qapla'  (thats Klingon for \"Success!\")",
-     rows: 3,
-     title: "Other languages, frameworks, or libraries?",
      visible: false,
-     visibleIf: "{neededLanguages} contains 19"
+     visibleIf: "{neededLanguages} contains 19",
+     title: "Other languages, frameworks, or libraries?",
+     rows: 3,
+     placeHolder: "Qapla'  (thats Klingon for \"Success!\")"
     }
    ],
    title: "Tell me, please.",
@@ -375,6 +372,9 @@ var surveyJSON = {
    questions: [
     {
      type: "radiogroup",
+     name: "goodDeed",
+     title: "Do you know anyone who is hiring Web Developers in the area?  And if so, do you want to do me a solid and give me their info?  It could be your good deed for the day...",
+     isRequired: true,
      choices: [
       {
        value: "1",
@@ -385,10 +385,7 @@ var surveyJSON = {
        text: "I hate you! You shouldn't have capitalized \"Do\".  I hope you never get a job, Eric!"
       }
      ],
-     isRequired: true,
-     name: "goodDeed",
-     otherText: "other",
-     title: "Do you know anyone who is hiring Web Developers in the area?  And if so, do you want to do me a solid and give me their info?  It could be your good deed for the day..."
+     otherText: "other"
     }
    ],
    title: "Since you are here,",
@@ -401,6 +398,9 @@ var surveyJSON = {
    questions: [
     {
      type: "radiogroup",
+     name: "stumble",
+     title: "Did you just stumble upon this while Googling a survey coding example, using React, Redux, or Node?",
+     isRequired: true,
      choices: [
       {
        value: "1",
@@ -411,10 +411,7 @@ var surveyJSON = {
        text: "No"
       }
      ],
-     isRequired: true,
-     name: "stumble",
-     otherText: "other",
-     title: "Did you just stumble upon this while Googling a survey coding example, using React, Redux, or Node?"
+     otherText: "other"
     }
    ],
    title: "I know your struggle.",
@@ -427,13 +424,76 @@ var surveyJSON = {
    questions: [
     {
      type: "html",
-     html: "<h3>Look at this kitten and think about your life.</h3>",
-     name: "question3"
+     html: "<h3>Now, look at this kitten and think about your soul.</h3>",
+     name: "noGoodKitten"
     },
     {
      type: "html",
-     html: kitten,
+     html: "<img src='http://localhost:3000/kittens/cuteKitten01.jpg' />\n</br>",
      name: "kitten"
+    },
+    {
+     type: "rating",
+     isRequired: true,
+     name: "guiltKitten",
+     rateValues: [
+      {
+       value: "0",
+       text: "I'm allergic."
+      },
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      {
+       value: "10",
+       text: "Bastet, forgive me."
+      }
+     ],
+     title: "On a scale from 0 to 10, how guilty does this kitty make you feel?"
+    },
+    {
+     type: "html",
+     html: "<h3>Oh, you're one of those \"dog people\", aren't ya?.</h3>",
+     name: "noGoodPuppy",
+     visibleIf: "{guiltKitten} <= 4"
+    },
+    {
+     type: "html",
+     html: "<img src='http://localhost:3000/puppies/cutePuppy01.jpg' />\n</br>",
+     name: "noGoodPuppy",
+     visibleIf: "{guiltKitten} <= 4"
+    },
+    {
+     type: "rating",
+     isRequired: true,
+     name: "guiltPuppy",
+     rateValues: [
+      {
+       value: "0",
+       text: "I like snakes."
+      },
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      {
+       value: "10",
+       text: "Crying into a tub of ice cream."
+      }
+     ],
+     title: "Can you seriously not hear Sarah Mclachlan singing right now?",
+     visibleIf: "{guiltKitten} <= 4"
     }
    ],
    title: "Well, that's just plain mean.",
@@ -446,6 +506,9 @@ var surveyJSON = {
    questions: [
     {
      type: "radiogroup",
+     name: "wantGit",
+     title: "Would you like to visit my GitHub page so you can get the code?",
+     isRequired: true,
      choices: [
       {
        value: "1",
@@ -456,10 +519,7 @@ var surveyJSON = {
        text: "No"
       }
      ],
-     isRequired: true,
-     name: "wantGit",
-     otherText: "other",
-     title: "Would you like to visit my GitHub page so you can get the code?"
+     otherText: "other"
     }
    ],
    title: "Awesome!",
@@ -472,6 +532,9 @@ var surveyJSON = {
    questions: [
     {
      type: "radiogroup",
+     name: "getGit",
+     title: "If you know anyone who is hiring in Austin, Texas, would you send me their info and help me get a job.  If not, it's cool.  You can still have the link.",
+     isRequired: true,
      choices: [
       {
        value: "1",
@@ -482,10 +545,7 @@ var surveyJSON = {
        text: "I don't know anyone.  Just the link, please."
       }
      ],
-     isRequired: true,
-     name: "getGit",
-     otherText: "other",
-     title: "If you know anyone who is hiring in Austin, Texas, would you send me their info and help me get a job.  If not, it's cool.  You can still have the link."
+     otherText: "other"
     }
    ],
    title: "Since you are here,",
@@ -508,77 +568,77 @@ var surveyJSON = {
     },
     {
      type: "text",
+     name: "userCompany",
+     width: "33%",
+     title: "Your Company (if applicable)",
      commentText: "WHAT IS THIS?",
      isRequired: true,
-     name: "userCompany",
-     placeHolder: "The Best Inc",
-     title: "Your Company (if applicable)",
-     width: "33%"
+     placeHolder: "The Best Inc"
     },
     {
      type: "text",
-     commentText: "WHAT IS THIS?",
-     isRequired: true,
      name: "userName",
-     placeHolder: "Hubert Humperdink",
+     width: "33%",
      startWithNewLine: false,
      title: "Your Name",
-     width: "33%"
+     commentText: "WHAT IS THIS?",
+     isRequired: true,
+     placeHolder: "Hubert Humperdink"
     },
     {
      type: "text",
-     inputType: "email",
-     isRequired: true,
      name: "userEmail",
-     placeHolder: "emailMadeWhenIWas14@regrets.com",
+     width: "33%",
      startWithNewLine: false,
      title: "Your Email",
+     isRequired: true,
      validators: [
       {
        type: "email"
       }
      ],
-     width: "33%"
+     inputType: "email",
+     placeHolder: "emailMadeWhenIWas14@regrets.com"
     },
     {
      type: "text",
-     commentText: "WHAT IS THIS?",
-     isRequired: true,
      name: "theirCompany",
-     placeHolder: "Awesome LLC",
+     width: "33%",
      title: "Their Company",
-     width: "33%"
+     commentText: "WHAT IS THIS?",
+     isRequired: true,
+     placeHolder: "Awesome LLC"
     },
     {
      type: "text",
-     commentText: "WHAT IS THIS?",
-     isRequired: true,
      name: "theirName",
-     placeHolder: "Bill Jobs-Gates",
+     width: "33%",
      startWithNewLine: false,
      title: "Their Name",
-     width: "33%"
+     commentText: "WHAT IS THIS?",
+     isRequired: true,
+     placeHolder: "Bill Jobs-Gates"
     },
     {
      type: "text",
-     inputType: "email",
-     isRequired: true,
      name: "theirEmail",
-     placeHolder: "boringEmailAddress@company.com",
+     width: "33%",
      startWithNewLine: false,
      title: "Their Email",
+     isRequired: true,
      validators: [
       {
        type: "email"
       }
      ],
-     width: "33%"
+     inputType: "email",
+     placeHolder: "boringEmailAddress@company.com"
     },
     {
      type: "comment",
      name: "theirAbout",
-     placeHolder: "They want to pay you a millionny dollars an hour to look at cat videos!",
-     title: "What's the inside info?"
+     title: "What's the inside info?",
+     placeHolder: "They want to pay you a millionny dollars an hour to look at cat videos!"
     }
    ],
    title: "You are my new best friend.",
@@ -618,6 +678,9 @@ var surveyJSON = {
    questions: [
     {
      type: "radiogroup",
+     name: "timeTravel",
+     title: "You are a time traveler looking to assemble a rag tag crew, and needing a lovable roguish jack of all trades to be the heart and glue that holds the team together?",
+     isRequired: true,
      choices: [
       {
        value: "1",
@@ -628,10 +691,7 @@ var surveyJSON = {
        text: "Nope. Also, isn't the purpose of this survey to get a job?  You're kind of an idiot."
       }
      ],
-     isRequired: true,
-     name: "timeTravel",
-     otherText: "other",
-     title: "You are a time traveler looking to assemble a rag tag crew, and needing a lovable roguish jack of all trades to be the heart and glue that holds the team together?"
+     otherText: "other"
     }
    ],
    title: "Oh, I know why you are here.",
@@ -643,6 +703,9 @@ var surveyJSON = {
    questions: [
     {
      type: "radiogroup",
+     name: "likeSurveys",
+     title: "Tell the truth.  This is a \"safe space\".",
+     isRequired: true,
      choices: [
       {
        value: "1",
@@ -653,10 +716,7 @@ var surveyJSON = {
        text: "No.  Give up, yet?"
       }
      ],
-     isRequired: true,
-     name: "likeSurveys",
-     otherText: "other",
-     title: "Tell the truth.  This is a \"safe space\"."
+     otherText: "other"
     },
     {
      type: "html",
@@ -692,33 +752,33 @@ var surveyJSON = {
     },
     {
      type: "text",
+     name: "yourName",
+     width: "50%",
+     title: "Your Name",
      commentText: "WHAT IS THIS?",
      isRequired: true,
-     name: "yourName",
-     placeHolder: "Mary Q. Contrarian",
-     title: "Your Name",
-     width: "50%"
+     placeHolder: "Mary Q. Contrarian"
     },
     {
      type: "text",
-     inputType: "email",
-     isRequired: true,
      name: "userEmail",
-     placeHolder: "emailMadeWhenIWas14@regrets.com",
+     width: "50%",
      startWithNewLine: false,
      title: "Your Email",
+     isRequired: true,
      validators: [
       {
        type: "email"
       }
      ],
-     width: "50%"
+     inputType: "email",
+     placeHolder: "emailMadeWhenIWas14@regrets.com"
     },
     {
      type: "comment",
      name: "question21",
-     placeHolder: "I have to know!",
-     title: "Please, just tell me why you are here."
+     title: "Please, just tell me why you are here.",
+     placeHolder: "I have to know!"
     }
    ],
    title: "Oh, for crying out loud!",
@@ -735,33 +795,33 @@ var surveyJSON = {
     },
     {
      type: "text",
+     name: "userName",
+     width: "50%",
+     title: "Your Name",
      commentText: "WHAT IS THIS?",
      isRequired: true,
-     name: "userName",
-     placeHolder: "Come with me, if you want to live.",
-     title: "Your Name",
-     width: "50%"
+     placeHolder: "Come with me, if you want to live."
     },
     {
      type: "text",
-     inputType: "email",
-     isRequired: true,
      name: "userEmail",
-     placeHolder: "cher@aol.com",
+     width: "50%",
      startWithNewLine: false,
      title: "Your Email",
+     isRequired: true,
      validators: [
       {
        type: "email"
       }
      ],
-     width: "50%"
+     inputType: "email",
+     placeHolder: "cher@aol.com"
     },
     {
      type: "comment",
      name: "userComment",
-     placeHolder: "I've never been a fan of Cold Play, if my input is under consideration.",
-     title: "What part of history needs to be changed?"
+     title: "What part of history needs to be changed?",
+     placeHolder: "I've never been a fan of Cold Play, if my input is under consideration."
     }
    ],
    title: "I'm in!",
@@ -779,76 +839,76 @@ var surveyJSON = {
     },
     {
      type: "text",
-     commentText: "WHAT IS THIS?",
      name: "userCompany",
-     placeHolder: "The Best Inc",
+     width: "33%",
      title: "Your Company (if applicable)",
-     width: "33%"
+     commentText: "WHAT IS THIS?",
+     placeHolder: "The Best Inc"
     },
     {
      type: "text",
-     commentText: "WHAT IS THIS?",
-     isRequired: true,
      name: "userName",
-     placeHolder: "Keyser Soze",
+     width: "33%",
      startWithNewLine: false,
      title: "Your Name",
-     width: "33%"
+     commentText: "WHAT IS THIS?",
+     isRequired: true,
+     placeHolder: "Keyser Soze"
     },
     {
      type: "text",
-     inputType: "email",
-     isRequired: true,
      name: "userEmail",
-     placeHolder: "emailMadeWhenIWas14@regrets.com",
+     width: "33%",
      startWithNewLine: false,
      title: "Your Email",
+     isRequired: true,
      validators: [
       {
        type: "email"
       }
      ],
-     width: "33%"
+     inputType: "email",
+     placeHolder: "emailMadeWhenIWas14@regrets.com"
     },
     {
      type: "text",
-     commentText: "WHAT IS THIS?",
-     isRequired: true,
      name: "theirCompany",
-     placeHolder: "Awesome LLC",
+     width: "33%",
      title: "Their Company",
-     width: "33%"
+     commentText: "WHAT IS THIS?",
+     isRequired: true,
+     placeHolder: "Awesome LLC"
     },
     {
      type: "text",
-     commentText: "WHAT IS THIS?",
-     isRequired: true,
      name: "theirName",
-     placeHolder: "Bill Jobs-Gates",
+     width: "33%",
      startWithNewLine: false,
      title: "Their Name",
-     width: "33%"
+     commentText: "WHAT IS THIS?",
+     isRequired: true,
+     placeHolder: "Bill Jobs-Gates"
     },
     {
      type: "text",
-     inputType: "email",
-     isRequired: true,
      name: "theirEmail",
-     placeHolder: "boringEmailAddress@company.com",
+     width: "33%",
      startWithNewLine: false,
      title: "Their Email",
+     isRequired: true,
      validators: [
       {
        type: "email"
       }
      ],
-     width: "33%"
+     inputType: "email",
+     placeHolder: "boringEmailAddress@company.com"
     },
     {
      type: "comment",
      name: "theirAbout",
-     placeHolder: "They want to pay you a millionny dollars an hour to index all the cat videos on the internet!",
-     title: "What's the inside info?"
+     title: "What's the inside info?",
+     placeHolder: "They want to pay you a millionny dollars an hour to index all the cat videos on the internet!"
     },
     {
      type: "html",
