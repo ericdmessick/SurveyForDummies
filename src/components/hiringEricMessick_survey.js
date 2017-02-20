@@ -438,10 +438,9 @@ var surveyJSON = {
      name: "guiltKitten",
      rateValues: [
       {
-       value: "0",
+       value: "1",
        text: "I'm allergic."
       },
-      "1",
       "2",
       "3",
       "4",
