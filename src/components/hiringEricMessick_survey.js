@@ -429,7 +429,7 @@ var surveyJSON = {
     },
     {
      type: "html",
-     html: "<img src='http://localhost:3000/kittens/cuteKitten01.jpg' />\n</br>",
+     html: "<img src='https://surveyfordummies.herokuapp.com/kittens/cuteKitten01.jpg' />\n</br>",
      name: "kitten"
     },
     {
@@ -461,12 +461,14 @@ var surveyJSON = {
      type: "html",
      html: "<h3>Oh, you're one of those \"dog people\", aren't ya?.</h3>",
      name: "noGoodPuppy",
+     visible: false,
      visibleIf: "{guiltKitten} <= 4"
     },
     {
      type: "html",
-     html: "<img src='http://localhost:3000/puppies/cutePuppy01.jpg' />\n</br>",
+     html: "<img src='https://surveyfordummies.herokuapp.com/puppies/cutePuppy01.jpg' />\n</br>",
      name: "noGoodPuppy",
+     visible: false,
      visibleIf: "{guiltKitten} <= 4"
     },
     {
@@ -493,6 +495,7 @@ var surveyJSON = {
       }
      ],
      title: "Can you seriously not hear Sarah Mclachlan singing right now?",
+     visible: false,
      visibleIf: "{guiltKitten} <= 4"
     }
    ],
