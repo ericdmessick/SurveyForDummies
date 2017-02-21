@@ -435,12 +435,11 @@ var surveyJSON = {
     {
      type: "rating",
      isRequired: true,
+     maximumRateDescription: "Bastet, forgive me.",
+     mininumRateDescription: "I'm allergic",
      name: "guiltKitten",
      rateValues: [
-      {
-       value: "1",
-       text: "I'm allergic."
-      },
+      "1",
       "2",
       "3",
       "4",
@@ -449,10 +448,7 @@ var surveyJSON = {
       "7",
       "8",
       "9",
-      {
-       value: "10",
-       text: "Bastet, forgive me."
-      }
+      "10"
      ],
      title: "On a scale from 0 to 10, how guilty does this kitty make you feel?"
     },
