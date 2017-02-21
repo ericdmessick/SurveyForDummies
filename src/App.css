@@ -232,6 +232,25 @@ p:last-of-type {
 
 /*--------------RATING PAGE STYLES---------------*/
 
+.cutePic {
+    max-width: 100%;
+}
+
+@media only screen and (max-width : 414px) {
+    #sq_119 h5 {
+        font-size: 16px;
+        padding-left: 2px;
+    }
+    #sq_120 h5 {
+        font-size: 16px;
+        padding-left: 2px;
+    }
+}
+
+.sv_q_rating {
+    margin-top: 10px;
+}
+
 .sv_q_rating_item {
     border: 1px solid #e7eaec;
     border-radius: 3px;
@@ -255,6 +274,13 @@ p:last-of-type {
     position: relative;
     float: left;
     -webkit-box-sizing: border-box;
+}
+
+@media only screen and (max-width : 414px) {
+    .sv_q_rating_item {
+        padding: 3px 8px;
+        font-size: 12px;
+    }
 }
 
 .sv_q_rating_item:hover {

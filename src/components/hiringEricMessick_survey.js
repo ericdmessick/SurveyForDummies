@@ -429,7 +429,7 @@ var surveyJSON = {
     },
     {
      type: "html",
-     html: "<img src='https://surveyfordummies.herokuapp.com/kittens/cuteKitten01.jpg' />\n</br></br>",
+     html: "<img class=\"cutePic\" src='https://surveyfordummies.herokuapp.com/kittens/cuteKitten01.jpg' />\n</br></br>",
      name: "kitten"
     },
     {
@@ -460,7 +460,7 @@ var surveyJSON = {
     },
     {
      type: "html",
-     html: "<img src='https://surveyfordummies.herokuapp.com/puppies/cutePuppy01.jpg' />\n</br></br>",
+     html: "<img class=\"cutePic\" src='https://surveyfordummies.herokuapp.com/puppies/cutePuppy01.jpg' />\n</br></br>",
      name: "noGoodPuppy",
      visible: false,
      visibleIf: "{guiltKitten} < 5"
@@ -468,7 +468,7 @@ var surveyJSON = {
     {
      type: "rating",
      isRequired: true,
-     maximumRateDescription: "Crying into a tub of ice cream.",
+     maximumRateDescription: "Crying in my ice cream.",
      mininumRateDescription: "I like snakes.",
      name: "guiltPuppy",
      rateValues: [
