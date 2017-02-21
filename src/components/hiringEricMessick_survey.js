@@ -434,10 +434,6 @@ var surveyJSON = {
     },
     {
      type: "rating",
-     name: "test"
-    },
-    {
-     type: "rating",
      isRequired: true,
      maximumRateDescription: "Bastet, forgive me.",
      mininumRateDescription: "I'm allergic",
