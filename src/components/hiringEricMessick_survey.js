@@ -424,19 +424,19 @@ var surveyJSON = {
    questions: [
     {
      type: "html",
-     html: "<h3>Now, look at this kitten and think about your soul.</h3>",
+     html: "<h3>Now, look at this kitten and think about your soul.</h3>\n</br>",
      name: "noGoodKitten"
     },
     {
      type: "html",
-     html: "<img src='https://surveyfordummies.herokuapp.com/kittens/cuteKitten01.jpg' />\n</br>",
+     html: "<img src='https://surveyfordummies.herokuapp.com/kittens/cuteKitten01.jpg' />\n</br></br>",
      name: "kitten"
     },
     {
      type: "rating",
      isRequired: true,
-     maximumRateDescription: "( Bastet, forgive me. )",
-     mininumRateDescription: "( I'm allergic. )",
+     maximumRateDescription: "Bastet, forgive me.",
+     mininumRateDescription: "I'm allergic.",
      name: "guiltKitten",
      rateValues: [
       "1",
@@ -453,14 +453,14 @@ var surveyJSON = {
     },
     {
      type: "html",
-     html: "<h3>Oh, you're one of those \"dog people\", aren't ya?.</h3>",
+     html: "</br>\n<h3>Oh, you're one of those \"dog people\", aren't ya?</h3>\n</br></br>",
      name: "noGoodPuppy",
      visible: false,
      visibleIf: "{guiltKitten} < 5"
     },
     {
      type: "html",
-     html: "<img src='https://surveyfordummies.herokuapp.com/puppies/cutePuppy01.jpg' />\n</br>",
+     html: "<img src='https://surveyfordummies.herokuapp.com/puppies/cutePuppy01.jpg' />\n</br></br>",
      name: "noGoodPuppy",
      visible: false,
      visibleIf: "{guiltKitten} < 5"
@@ -468,8 +468,8 @@ var surveyJSON = {
     {
      type: "rating",
      isRequired: true,
-     maximumRateDescription: "( Crying into a tub of ice cream. )",
-     mininumRateDescription: "( I like snakes. )",
+     maximumRateDescription: "Crying into a tub of ice cream.",
+     mininumRateDescription: "I like snakes.",
      name: "guiltPuppy",
      rateValues: [
       "1",
