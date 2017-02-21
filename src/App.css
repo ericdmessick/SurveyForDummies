@@ -267,10 +267,13 @@ p:last-of-type {
     background-color: #e6e6e6;
 }
 
-.sv_q_rating_item span:nth-of-type(2) {
+.sv_q_rating_item:first-of-type span:nth-of-type(2) {
     display: none;
 }
-    
+
+.sv_q_rating_item:last-of-type span:first-of-type {
+    display: none;
+}
 
 /*--------------END RATING PAGE STYLES---------------*/
 
