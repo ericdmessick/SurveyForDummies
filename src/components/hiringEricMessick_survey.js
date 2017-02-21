@@ -457,14 +457,14 @@ var surveyJSON = {
      html: "<h3>Oh, you're one of those \"dog people\", aren't ya?.</h3>",
      name: "noGoodPuppy",
      visible: false,
-     visibleIf: "{guiltKitten} <= 4"
+     visibleIf: "{guiltKitten} < 5"
     },
     {
      type: "html",
      html: "<img src='https://surveyfordummies.herokuapp.com/puppies/cutePuppy01.jpg' />\n</br>",
      name: "noGoodPuppy",
      visible: false,
-     visibleIf: "{guiltKitten} <= 4"
+     visibleIf: "{guiltKitten} < 5"
     },
     {
      type: "rating",
@@ -491,7 +491,7 @@ var surveyJSON = {
      ],
      title: "Can you seriously not hear Sarah Mclachlan singing right now?",
      visible: false,
-     visibleIf: "{guiltKitten} <= 4"
+     visibleIf: "{guiltKitten} < 5"
     }
    ],
    title: "Well, that's just plain mean.",
