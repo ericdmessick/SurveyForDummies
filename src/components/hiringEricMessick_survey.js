@@ -435,11 +435,12 @@ var surveyJSON = {
     {
      type: "rating",
      isRequired: true,
-     maximumRateDescription: "Bastet, forgive me.",
-     mininumRateDescription: "I'm allergic",
      name: "guiltKitten",
      rateValues: [
-      "1",
+      {
+       value: "1",
+       text: "I'm allergic."
+      },
       "2",
       "3",
       "4",
@@ -447,10 +448,12 @@ var surveyJSON = {
       "6",
       "7",
       "8",
-      "9",
-      "10"
+      {
+       value: "9",
+       text: "Bastet, forgive me."
+      }
      ],
-     title: "On a scale from 0 to 10, how guilty does this kitty make you feel?"
+     title: "On a scale from 1 to 9, how guilty does this kitty make you feel?"
     },
     {
      type: "html",
@@ -472,10 +475,9 @@ var surveyJSON = {
      name: "guiltPuppy",
      rateValues: [
       {
-       value: "0",
+       value: "1",
        text: "I like snakes."
       },
-      "1",
       "2",
       "3",
       "4",
@@ -483,9 +485,8 @@ var surveyJSON = {
       "6",
       "7",
       "8",
-      "9",
       {
-       value: "10",
+       value: "9",
        text: "Crying into a tub of ice cream."
       }
      ],
