@@ -158,6 +158,8 @@ label.sv_q_radiogroup span {
 
 
 
+
+
 /*------------------CHECKBOX STYLES---------------*/
 div.sv_q_checkbox {
     width: 33.333% !important;
@@ -182,6 +184,10 @@ textarea[type=text] {
 
 /*--------------END CHECKBOX STYLES---------------*/
 
+
+
+
+
 /*------------------FORM STYLES---------------*/
 @media only screen and (max-width : 414px) {
     .sv_q {
@@ -198,6 +204,8 @@ textarea[type=text] {
 
 
 
+
+
 /*--------------NAVIGATION STYLES---------------*/
 
 .sv_nav {
@@ -208,6 +216,8 @@ textarea[type=text] {
 
 
 
+
+
 /*--------------RESULT PAGE STYLES---------------*/
 
 p:last-of-type {
@@ -215,4 +225,37 @@ p:last-of-type {
 }
 
 /*--------------END RESULT PAGE STYLES---------------*/
+
+
+
+
+
+/*--------------RATING PAGE STYLES---------------*/
+
+.sv_q_rating_item {
+    border: 1px solid #e7eaec;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    position: relative;
+    float: left;
+    -webkit-box-sizing: border-box;
+}
+
+/*--------------END RATING PAGE STYLES---------------*/
 
