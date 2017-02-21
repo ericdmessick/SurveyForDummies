@@ -257,5 +257,16 @@ p:last-of-type {
     -webkit-box-sizing: border-box;
 }
 
+.sv_q_rating_item:hover {
+    background-color: #e6e6e6;
+}
+
+.sv_q_rating_item:active, .sv_q_rating_item.active {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15) inset;
+        border: 1px solid #d2d2d2;
+    background-color: #e6e6e6;
+}
+    
+
 /*--------------END RATING PAGE STYLES---------------*/
 

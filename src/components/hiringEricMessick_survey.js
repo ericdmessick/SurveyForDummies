@@ -435,8 +435,8 @@ var surveyJSON = {
     {
      type: "rating",
      isRequired: true,
-     maximumRateDescription: "Bastet, forgive me.",
-     mininumRateDescription: "I'm allergic.",
+     maximumRateDescription: "( Bastet, forgive me. )",
+     mininumRateDescription: "( I'm allergic. )",
      name: "guiltKitten",
      rateValues: [
       "1",
@@ -468,12 +468,11 @@ var surveyJSON = {
     {
      type: "rating",
      isRequired: true,
+     maximumRateDescription: "( Crying into a tub of ice cream. )",
+     mininumRateDescription: "( I like snakes. )",
      name: "guiltPuppy",
      rateValues: [
-      {
-       value: "1",
-       text: "I like snakes."
-      },
+      "1",
       "2",
       "3",
       "4",
@@ -481,10 +480,7 @@ var surveyJSON = {
       "6",
       "7",
       "8",
-      {
-       value: "9",
-       text: "Crying into a tub of ice cream."
-      }
+      "9"
      ],
      title: "Can you seriously not hear Sarah Mclachlan singing right now?",
      visible: false,
