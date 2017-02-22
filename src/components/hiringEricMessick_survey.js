@@ -205,8 +205,8 @@ var surveyJSON = {
    questions: [
     {
      type: "html",
-     html: "<div class=\"results_container\"><h3>Not that I'm a prize pig...</h3><p>But, this is exactly the foot-in-the-door I am looking for.</p>",
-     name: "youreAWinner"
+     name: "youreAWinner",
+     html: "<div class=\"results_container\"><h3>Not that I'm a prize pig...</h3><p>But, this is exactly the foot-in-the-door I am looking for.</p>"
     },
     {
      type: "text",
@@ -240,8 +240,8 @@ var surveyJSON = {
     },
     {
      type: "html",
-     html: "<p class=\"footnote\">*Quote from the 5th Element.  No big deal</p>\n</div>",
-     name: "finePrint"
+     name: "finePrint",
+     html: "<p class=\"footnote\">*Quote from the 5th Element.  No big deal</p>\n</div>"
     }
    ],
    title: "\"YOU'RE A WINNER!\"*",
@@ -358,8 +358,8 @@ var surveyJSON = {
    questions: [
     {
      type: "html",
-     html: "<h3>I appreciate you letting me know what you need.</h3>\n<p>I use that last question to get a better consensus of what languages, frameworks, and libraries employers are looking for.  Then, I tailor my training accordingly.</p><p>When I am not working, I take courses on Udemy, Codecademy, and Code School, in conjunction with the documentation available on the developer's sites.  Typically, I try to create a project that allows me to flex my new muscles, and then submit them to other developer's for feedback.</p><p>Tell you what, check back in a few months.  <strong>I may surprise you.</strong></p>",
-     name: "checkBack"
+     name: "checkBack",
+     html: "<h3>I appreciate you letting me know what you need.</h3>\n<p>I use that last question to get a better consensus of what languages, frameworks, and libraries employers are looking for.  Then, I tailor my training accordingly.</p><p>When I am not working, I take courses on Udemy, Codecademy, and Code School, in conjunction with the documentation available on the developer's sites.  Typically, I try to create a project that allows me to flex my new muscles, and then submit them to other developer's for feedback.</p><p>Tell you what, check back in a few months.  <strong>I may surprise you.</strong></p>"
     }
    ],
    title: "I hear you, and...",
@@ -424,22 +424,23 @@ var surveyJSON = {
    questions: [
     {
      type: "html",
-     html: "<h3>Now, look at this kitten and think about your soul.</h3>\n</br>",
-     name: "noGoodKitten"
+     name: "noGoodKitten",
+     html: "<h3>Now, look at this kitten and think about your soul.</h3>\n</br>"
     },
     {
      type: "html",
-     html: "<img class=\"cutePic\" src='https://surveyfordummies.herokuapp.com/kittens/cuteKitten01.jpg' />\n</br></br>",
-     name: "kitten"
+     name: "kitten",
+     html: "<img class=\"cutePic\" src='https://surveyfordummies.herokuapp.com/kittens/cuteKitten01.jpg' />\n</br></br>"
     },
     {
      type: "rating",
      isRequired: true,
-     maximumRateDescription: "Bastet, forgive me.",
-     mininumRateDescription: "I'm allergic.",
      name: "guiltKitten",
      rateValues: [
-      "1",
+      {
+       value: "1",
+       text: "I'm Allergic"
+      },
       "2",
       "3",
       "4",
@@ -447,28 +448,32 @@ var surveyJSON = {
       "6",
       "7",
       "8",
-      "9"
+      "9",
+      {
+       value: "10",
+       text: "Bastet"
+      }
      ],
      title: "On a scale from 1 to 9, how guilty does this kitty make you feel?"
     },
     {
      type: "html",
-     html: "</br>\n<h3>Oh, you're one of those \"dog people\", aren't ya?</h3>\n</br></br>",
      name: "noGoodPuppy",
      visible: false,
-     visibleIf: "{guiltKitten} < 5"
+     visibleIf: "{guiltKitten} < 5",
+     html: "</br>\n<h3>Oh, you're one of those \"dog people\", aren't ya?</h3>\n</br></br>"
     },
     {
      type: "html",
-     html: "<img class=\"cutePic\" src='https://surveyfordummies.herokuapp.com/puppies/cutePuppy01.jpg' />\n</br></br>",
      name: "noGoodPuppy",
      visible: false,
-     visibleIf: "{guiltKitten} < 5"
+     visibleIf: "{guiltKitten} < 5",
+     html: "<img class=\"cutePic\" src='https://surveyfordummies.herokuapp.com/puppies/cutePuppy01.jpg' />\n</br></br>"
     },
     {
      type: "rating",
      isRequired: true,
-     maximumRateDescription: "Crying in my ice cream.",
+     maximumRateDescription: "Ice cream crying.",
      mininumRateDescription: "I like snakes.",
      name: "guiltPuppy",
      rateValues: [
@@ -549,13 +554,13 @@ var surveyJSON = {
    questions: [
     {
      type: "html",
-     html: "<h3>First, click the link.</h3><p>But then, come right back and finish 'cause I didn't Javascript this piece.</p><a target=\"_blank\" href=\"\">To the GitHub</a>",
-     name: "gitLink"
+     name: "gitLink",
+     html: "<h3>First, click the link.</h3><p>But then, come right back and finish 'cause I didn't Javascript this piece.</p><a target=\"_blank\" href=\"\">To the GitHub</a>"
     },
     {
      type: "html",
-     html: "<h3>Then, give send me the 411.</h3>",
-     name: "question9"
+     name: "question9",
+     html: "<h3>Then, give send me the 411.</h3>"
     },
     {
      type: "text",
@@ -642,8 +647,8 @@ var surveyJSON = {
    questions: [
     {
      type: "html",
-     html: "<h3>And good luck.</h3><p>Psst.  Click the link.</p><a target=\"_blank\" href=\"\">Here's the git</a>",
-     name: "justGit"
+     name: "justGit",
+     html: "<h3>And good luck.</h3><p>Psst.  Click the link.</p><a target=\"_blank\" href=\"\">Here's the git</a>"
     }
    ],
    title: "May the Code be with You.",
@@ -656,8 +661,8 @@ var surveyJSON = {
    questions: [
     {
      type: "html",
-     html: "<div class=\"results_container\"><h3>This is sort of the end of the line for you then.</h3></div>",
-     name: "endForYou"
+     name: "endForYou",
+     html: "<div class=\"results_container\"><h3>This is sort of the end of the line for you then.</h3></div>"
     }
    ],
    title: "Okay. Well...",
@@ -711,8 +716,8 @@ var surveyJSON = {
     },
     {
      type: "html",
-     html: "<p class=\"footnote\">*Warning:  Nerd Alert! \"Nuke\" is the fictional drug from RoboCop 2.</p>",
-     name: "nuke"
+     name: "nuke",
+     html: "<p class=\"footnote\">*Warning:  Nerd Alert! \"Nuke\" is the fictional drug from RoboCop 2.</p>"
     }
    ],
    title: "Do you just really like doing random surveys?",
@@ -725,8 +730,8 @@ var surveyJSON = {
    questions: [
     {
      type: "html",
-     html: "<div class=\"results_container\">\n<h3>This is just one survey, and will probably not quench your survey thirst.</h3><p>So, here is a list of survey sites to tide you over.</p>\n<ul>\n<li><a href=\"http://www.dumb.com/polls\">Dumb</a></li>\n<li><a href=\"http://tjshome.com/survey/takesurvey.php?id=13537\">TJ's Home</a></li>\n<li><a href=\"http://www.quibblo.com/take/survey\">Quibblo</a></li>\n<li><a href=\"https://www.quotev.com/surveys/Fun\">Quotev</a></li>\n<li><a href=\"http://www.quizopplis.com\">Quizopolis</a></li>\n<li><a href=\"http://weirdpoll.com\">Weird Poll</a></li>\n<li><a href=\"http://www.wonderpolls.com\">Wonder Polls</a></li>\n\n</ul>\n</div>",
-     name: "likeSurveys"
+     name: "likeSurveys",
+     html: "<div class=\"results_container\">\n<h3>This is just one survey, and will probably not quench your survey thirst.</h3><p>So, here is a list of survey sites to tide you over.</p>\n<ul>\n<li><a href=\"http://www.dumb.com/polls\">Dumb</a></li>\n<li><a href=\"http://tjshome.com/survey/takesurvey.php?id=13537\">TJ's Home</a></li>\n<li><a href=\"http://www.quibblo.com/take/survey\">Quibblo</a></li>\n<li><a href=\"https://www.quotev.com/surveys/Fun\">Quotev</a></li>\n<li><a href=\"http://www.quizopplis.com\">Quizopolis</a></li>\n<li><a href=\"http://weirdpoll.com\">Weird Poll</a></li>\n<li><a href=\"http://www.wonderpolls.com\">Wonder Polls</a></li>\n\n</ul>\n</div>"
     }
    ],
    title: "Okay, well...",
@@ -738,8 +743,8 @@ var surveyJSON = {
    questions: [
     {
      type: "html",
-     html: "<h3>Just tell me.  Tell me.</h3>",
-     name: "cryingOutLoad"
+     name: "cryingOutLoad",
+     html: "<h3>Just tell me.  Tell me.</h3>"
     },
     {
      type: "text",
@@ -781,8 +786,8 @@ var surveyJSON = {
    questions: [
     {
      type: "html",
-     html: "<p>Reach out and give me the deets of when, where, and do I need a jacket?</p>",
-     name: "imInInstructions"
+     name: "imInInstructions",
+     html: "<p>Reach out and give me the deets of when, where, and do I need a jacket?</p>"
     },
     {
      type: "text",
@@ -825,8 +830,8 @@ var surveyJSON = {
    questions: [
     {
      type: "html",
-     html: "<h3>You know what to do.</h3>\n<p>Assuming that you're not a Platypus and never seen the internet before.</p>\n</br>\n<p>I sincerely apologize to all Platypus enthusiasts out there who are offended by that thoughtless comment about the ineptitude of the Platypi. I respect the noble Platypus, and it is not my intention to slight these stupid creatures in any way. Thank you again.**</p>\n",
-     name: "emailInstructions"
+     name: "emailInstructions",
+     html: "<h3>You know what to do.</h3>\n<p>Assuming that you're not a Platypus and never seen the internet before.</p>\n</br>\n<p>I sincerely apologize to all Platypus enthusiasts out there who are offended by that thoughtless comment about the ineptitude of the Platypi. I respect the noble Platypus, and it is not my intention to slight these stupid creatures in any way. Thank you again.**</p>\n"
     },
     {
      type: "text",
@@ -903,8 +908,8 @@ var surveyJSON = {
     },
     {
      type: "html",
-     html: "<p class=\"footnote\"  style=\"margin-bottom: 2px;\">*X-Men quote.  No big deal.</p>\n<p class=\"footnote\">**An apt apprehensive, and partially alliterate, unapologetic appropriation of the \"Platypi Apology.\"</p>",
-     name: "godAmongInsects"
+     name: "godAmongInsects",
+     html: "<p class=\"footnote\"  style=\"margin-bottom: 2px;\">*X-Men quote.  No big deal.</p>\n<p class=\"footnote\">**An apt apprehensive, and partially alliterate, unapologetic appropriation of the \"Platypi Apology.\"</p>"
     }
    ],
    title: "\"You are a god among insects.\"*",

@@ -236,6 +236,10 @@ p:last-of-type {
     max-width: 100%;
 }
 
+#sq_119, #sq_120 {
+    margin-bottom: 10px;
+}
+
 @media only screen and (max-width : 414px) {
     #sq_119 h5 {
         font-size: 16px;
@@ -248,7 +252,7 @@ p:last-of-type {
 }
 
 .sv_q_rating {
-    margin: 10px 0;
+    margin-bottom: 10px;
 }
 
 .sv_q_rating_item {
@@ -293,6 +297,7 @@ p:last-of-type {
     background-color: #e6e6e6;
 }
 
+/*
 .sv_q_rating_item:first-of-type span:nth-of-type(2) {
     display: none;
 }
@@ -300,6 +305,7 @@ p:last-of-type {
 .sv_q_rating_item:last-of-type span:first-of-type {
     display: none;
 }
+*/
 
 /*--------------END RATING PAGE STYLES---------------*/
 
