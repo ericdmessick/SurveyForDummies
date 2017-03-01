@@ -20,7 +20,7 @@ export default class Footer extends Component {
                     </div>
                     
                     <div className="me_container">
-                        <img src={me} className="footer_me" alt="me" />
+                        <img src="" className="footer_me" alt="me" />
                         
                         <div className="bubble_container">
                             <p className="black bubbleText">Some text</p>
