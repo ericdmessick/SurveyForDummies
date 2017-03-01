@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Header from "./components/header";
 import HiringEricMessickSurvey from "./components/hiringEricMessick_survey";
+import Footer from "./components/footer";
 
 import "./App.css";
 
@@ -15,6 +16,8 @@ class App extends Component {
                 <HiringEricMessickSurvey />
             </div>
       
+            <Footer />
+            
         </div>
     );
   }
