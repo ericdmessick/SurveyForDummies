@@ -361,3 +361,9 @@ p:last-of-type {
 .footer_yellow-container h2 {
     margin: 0;
 }
+
+.bubble_container {
+    width: 20%;
+    float: right;
+    margin: 0 10px 0 0;
+}
