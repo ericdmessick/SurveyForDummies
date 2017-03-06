@@ -21,9 +21,11 @@ export default class Footer extends Component {
                     
                     <div className="me_container">
                         <img src="" className="footer_me" alt="me" />
-                        
+                    </div>
+                    
+                    <div className="bubble_container">
+                            
                         <canvas
-                            className="bubble_container"
                             is="gwd-bezierpath" 
                             width="773" 
                             height="470" 

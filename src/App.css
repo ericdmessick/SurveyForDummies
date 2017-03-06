@@ -350,6 +350,7 @@ p:last-of-type {
 }
 
 .footer_yellow-container .blue {
+    float: left;
     margin: 30px 20px 10px 20px;
     width: 45%;
     font-weight: 800;
@@ -363,7 +364,14 @@ p:last-of-type {
 }
 
 .bubble_container {
-    width: 20%;
     float: right;
     margin: 0 10px 0 0;
 }
+
+.gwd-canvas-130s {
+      position: absolute;
+      top: 0px;
+      right: 3px;
+      width: 40%;
+      transform-origin: 199.703px 116.796px 0px;
+    }
