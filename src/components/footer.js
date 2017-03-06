@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import me from "https://surveyfordummies.herokuapp.com/public/me/dummiesguy.PNG";
+//import me from "https://surveyfordummies.herokuapp.com/public/me/dummiesguy.PNG";
 
 export default class Footer extends Component {
     render() {
