@@ -34,11 +34,12 @@ export default class Footer extends Component {
                                 </div>
                         </canvas>
                         
-                        <div className="me_container">
-                            <img src={me} className="footer_me" alt="me" />
-                        </div>
-                        
                     </div>
+                    
+                    <div className="me_container">
+                        <img src={me} className="footer_me" alt="me" />
+                    </div>
+                    
                 </div>
             </div>
         </div>
