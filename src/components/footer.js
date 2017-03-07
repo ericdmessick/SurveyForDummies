@@ -14,16 +14,6 @@ export default class Footer extends Component {
                 
                 <div className="footer_yellow-container">
                     
-                    <div className="blue">
-                        <h2><strong>A Survey to</strong></h2>
-                        <h2><strong>&nbsp;&nbsp;Expedite</strong></h2>
-                        <h2><strong>&nbsp;&nbsp;&nbsp;&nbsp;Employment</strong></h2>
-                    </div>
-                    
-                    <div className="me_container">
-                        <img src={me} className="footer_me" alt="me" />
-                    </div>
-                    
                     <div className="bubble_container">
                             
                         <canvas
@@ -37,8 +27,16 @@ export default class Footer extends Component {
                             stroke-color="null" 
                             fill-color="[0,0.4470588235294118,0.7372549019607844,1]" 
                             geom-type="5">
-                                <p className="black bubbleText">Some text</p>
+                                <div className="white">
+                                    <h2><strong>A Survey to</strong></h2>
+                                    <h2><strong>&nbsp;&nbsp;Expedite</strong></h2>
+                                    <h2><strong>&nbsp;&nbsp;&nbsp;&nbsp;Employment</strong></h2>
+                                </div>
                         </canvas>
+                        
+                        <div className="me_container">
+                            <img src={me} className="footer_me" alt="me" />
+                        </div>
                         
                     </div>
                 </div>

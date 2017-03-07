@@ -363,15 +363,24 @@ p:last-of-type {
     margin: 0;
 }
 
+/*
 .bubble_container {
     float: right;
     margin: 0 10px 0 0;
 }
+*/
 
 .gwd-canvas-130s {
       position: absolute;
+        transform: scaleX(-1);
       top: 0px;
       right: 3px;
       width: 40%;
       transform-origin: 199.703px 116.796px 0px;
     }
+
+.me_container {
+    width: 114px;
+    float: right;
+    margin: 6px 10px;
+}
