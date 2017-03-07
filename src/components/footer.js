@@ -22,7 +22,6 @@ export default class Footer extends Component {
                     
                     <div className="me_container">
                         <img src={me} className="footer_me" alt="me" />
-<!--                        <img src={me2} className="footer_me" alt="me2" />-->
                     </div>
                     
                     <div className="bubble_container">
