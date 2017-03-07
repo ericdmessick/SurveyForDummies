@@ -28,9 +28,9 @@ export default class Footer extends Component {
                             fill-color="[0,0.4470588235294118,0.7372549019607844,1]" 
                             geom-type="5">
                                 <div className="white">
-                                    <h2><strong>A Survey to</strong></h2>
-                                    <h2><strong>&nbsp;&nbsp;Expedite</strong></h2>
-                                    <h2><strong>&nbsp;&nbsp;&nbsp;&nbsp;Employment</strong></h2>
+                                    <h2 class="gwd-p-1wbh"><strong>A Survey to</strong></h2>
+                                    <h2 class="gwd-p-1wbh"><strong>&nbsp;&nbsp;Expedite</strong></h2>
+                                    <h2 class="gwd-p-1wbh"><strong>&nbsp;&nbsp;&nbsp;&nbsp;Employment</strong></h2>
                                 </div>
                         </canvas>
                         
