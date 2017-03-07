@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-//import me from "https://surveyfordummies.herokuapp.com/public/me/dummiesguy.PNG";
+import me from "https://surveyfordummies.herokuapp.com/public/me/dummiesGuy.jpg";
+import me2 from "https://surveyfordummies.herokuapp.com/public/me/dummiesguy.png";
 
 export default class Footer extends Component {
     render() {
@@ -20,7 +21,8 @@ export default class Footer extends Component {
                     </div>
                     
                     <div className="me_container">
-                        <img src="" className="footer_me" alt="me" />
+                        <img src={me} className="footer_me" alt="me" />
+                        <img src={me2} className="footer_me" alt="me2" />
                     </div>
                     
                     <div className="bubble_container">
