@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import me from "../public/me/dummiesGuy.png";
+import me from "../dummiesGuy.png";
 //import me2 from "../dummiesGuy.png";
 
 export default class Footer extends Component {
