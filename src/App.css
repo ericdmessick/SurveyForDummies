@@ -24,17 +24,33 @@
 
 /*-----------------------------HEADER----------------------------*/
 
+/*---------------HEADER CONTAINER--------------*/
+
 .header_container {
     background-color: #ffff00;
-/*    height: 500px;*/
     padding: 5px 0 5%;
 }
+
+@media only screen and (min-width : 1025px) {
+   .header_container {
+        background-color: #ffff00;
+        padding: 5px 0 4%;
+    }
+}
+
+/*---------------HEADER CONTAINER END--------------*/
+
+
+/*---------------HEADER CONTENT--------------*/
 
 .header_content {
     -webkit-transform: skewY(-5deg);
     -ms-transform: skewY(-5deg);
     transform: skewY(-5deg);
 }
+
+/*---------------'MAKE BOSS's JOBS EASIER'--------------*/
+
 
 .header_content > h2 {
     margin: 20px 20px 10px;
@@ -47,6 +63,30 @@
     } 
 }
 
+@media only screen and (min-width : 415px) and (max-width : 767px) {
+   .header_content > h2 {
+        margin: 20px 20px 10px;
+        font-size: 28px;
+    } 
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+   .header_content > h2 {
+        margin: 10px 20px 10px;
+        font-size: 30px;
+    } 
+}
+
+@media only screen and (min-width : 1025px) {
+   .header_content > h2 {
+        margin: 10px 20px 10px;
+        font-size: 36px;
+    } 
+}
+
+/*---------------'MAKE BOSS's JOBS EASIER' END--------------*/
+
+
 .header_container-black {
     background-color: #000;
 /*    height: 400px;*/
@@ -56,18 +96,36 @@
     margin-bottom: 2%;
 }
 
+/*---------------'HIRING ERIC MESSICK'--------------*/
+
+
 .header_container-black h3 {
     font-weight: 600;
-    margin: 10px 0 5px;
+    margin: 10px 0 1px -25%;
     font-family: 'Arial Black', 'Open Sans', sans-serif;
 }
 
 @media only screen and (max-width : 414px) {
    .header_container-black h3 {
        font-size: 17px;
-       margin: 10px 0 1px -25%;
     }
 }
+
+@media only screen and (min-width : 415px) and (max-width : 767px) {
+   .header_container-black h3 {
+       font-size: 20px;
+    }
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+   .header_container-black h3 {
+       font-size: 22px;
+    }
+}
+
+/*---------------'HIRING ERIC MESSICK' END--------------*/
+
+/*---------------'SURVEY'--------------*/
 
 .header_container-black h1 {
     font-weight: 800;
@@ -83,6 +141,24 @@
     }
 }
 
+@media only screen and (min-width : 415px) and (max-width : 767px) {
+   .header_container-black h1 {
+        font-size: 60px;
+       margin: 1px 0 2px;
+    }
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+   .header_container-black h1 {
+        font-size: 70px;
+       margin: 1px 0 2px;
+    }
+}
+
+/*---------------'SURVEY' END--------------*/
+
+/*---------------'DUMMIES' LOGO------------*/
+
 .header_logo {
     width: 60%;
     margin: 2px auto 20px;
@@ -94,6 +170,21 @@
     }
 }
 
+@media only screen and (min-width : 415px) and (max-width : 767px) {
+   .header_logo {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+   .header_logo {
+        width: 60%;
+    }
+}
+
+/*---------------'DUMMIES' LOGO END------------*/
+
+
 .header_blue-container {
     background-color: #0072bc;
     text-align: right;
@@ -102,7 +193,7 @@
 
 .header_blue-container h2 {
     margin: 1px 20px;
-    font-size: 26px;
+    font-size: 20px;
 }
 
 @media only screen and (max-width : 414px) {
@@ -110,6 +201,27 @@
         font-size: 18px;
     }
 }
+
+
+@media only screen and (min-width : 415px) and (max-width : 767px) {
+   .header_blue-container h2 {
+        font-size: 26px;
+    }
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+   .header_blue-container h2 {
+        font-size: 28px;
+    }
+}
+
+@media only screen and (min-width : 1025px) {
+   .header_blue-container h2 {
+        font-size: 30px;
+    }
+}
+
+/*---------------HEADER CONTENT END--------------*/
 
 /*-------------------------------------------------END HEADER------------------------------*/
 
@@ -323,17 +435,50 @@ p:last-of-type {
 
 /*--------------END RATING PAGE STYLES---------------*/
 
+
+
 /*------------------FOOTER----------------------------*/
 
+/*--------------FOOTER CONTAINER-----------*/
+
 .footer_container {
-    height: 200px;
+    height: 220px;
     overflow: hidden;
     position: relative;
 }
 
+@media only screen and (min-width : 415px) and (max-width : 580px) {
+   .footer_container {
+        height: 220px;
+    }
+}
+
+@media only screen and (min-width : 581px) and (max-width : 767px) {
+   .footer_container {
+        height: 280px;
+    }
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+       .footer_container {
+            height: 340px;
+    }
+}
+
+@media only screen and (min-width : 1025px) {
+       .footer_container {
+            height: 360px;
+    }
+}
+
+/*-----------FOOTER CONTAINER END---------*/
+
+
+/*--------------FOOTER CONTENT-----------*/
+
 .footer_content {
     width: 100%;
-    height: 300px;
+    height: 220px;
     position: absolute;
     top: 0;
     background-color: #ffff00;
@@ -343,12 +488,73 @@ p:last-of-type {
     transform: skewY(-5deg);
 }
 
+@media only screen and (min-width : 415px) and (max-width : 580px) {
+   .footer_content {
+        height: 220px;
+    }
+}
+
+@media only screen and (min-width : 581px) and (max-width : 767px) {
+   .footer_content {
+        height: 280px;
+    }
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+   .footer_content {
+        height: 340px;
+    }
+}
+
+@media only screen and (min-width : 1025px) {
+   .footer_content {
+        height: 360px;
+    }
+}
+
+/*------------FOOTER CONTENT END---------*/
+
+
 .footer_blue-container {
     background-color: #0072bc;
     height: 20px;
+}
+
+.footer_yellow-container {
+    width: 100%;
+    height: 200px;
     position: relative;
 }
 
+@media only screen and (min-width : 415px) and (max-width : 580px) {
+    .footer_yellow-container {
+        height: 200px;
+        width: 414px;
+        margin: 0 auto;
+
+    }
+}
+
+@media only screen and (min-width : 581px) and (max-width : 767px) {
+    .footer_yellow-container {
+        height: 260px;
+        width: 580px;
+        margin: 0 auto;
+
+
+    }
+}
+
+@media only screen and (min-width : 768px) {
+    .footer_yellow-container {
+        width: 768px;
+        margin: 0 auto;
+        height: 340px;
+
+    }
+}
+
+/*
 .footer_yellow-container .blue {
     float: left;
     margin: 30px 20px 10px 20px;
@@ -358,29 +564,126 @@ p:last-of-type {
     -ms-transform: skewY(5deg);
     transform: skewY(5deg);
 }
-
-.footer_yellow-container h2 {
-    margin: 0;
-}
-
-/*
-.bubble_container {
-    float: right;
-    margin: 0 10px 0 0;
-}
 */
 
-.gwd-canvas-130s {
-      position: absolute;
-        transform: scaleX(-1);
-      top: 0px;
-      right: 3px;
-      width: 40%;
-      transform-origin: 199.703px 116.796px 0px;
+/*---------------SPEECH BUBBLE CONTAINER------------*/
+
+.bubble_container {
+    float: left;
+    position: relative;
+/*    width: 70%;*/
+    width: 286px;
+    padding: 0 2px;
+}
+
+@media only screen and (min-width : 415px) and (max-width : 580px) {
+    .bubble_container {
+        width: 300px;
     }
+}
+
+@media only screen and (min-width : 581px) and (max-width : 767px) {
+    .bubble_container {
+        width: 390px;
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (min-width : 768px) {
+    .bubble_container {
+        width: 470px;
+        padding: 0 2px;
+        margin-left: 10%;
+    }
+}
+
+/*---------------SPEECH BUBBLE CONTAINER END------------*/
+
+
+/*---------------SPEECH BUBBLE CANVAS AND TEXT------------*/
+
+.bubble_text {
+    margin: 0 10px;
+    padding: 1px 12px;
+    text-align: center;
+}
+
+.bubble_text p {
+    margin: 1px;
+    font-size: 1.12em;
+}
+
+@media only screen and (min-width : 415px) and (max-width : 580px) {
+    .bubble_text p {
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (min-width : 581px) and (max-width : 767px) {
+    .bubble_text p {
+        margin: 1px;
+        font-size: 1.54em;
+    }
+}
+
+@media only screen and (min-width : 768px) {
+    .bubble_text p {
+        margin: 1px;
+        font-size: 1.80em;
+        padding: 0px 14px;
+    }
+}
+
+.gwd-canvas-130s {
+    position: absolute;
+    transform: scaleX(-1);
+    top: -2px;
+    left: 16px;
+    width: 90%;
+/*    transform-origin: 199.703px 116.796px 0px;*/
+    z-index: -100;
+}
+
+/*---------------SPEECH BUBBLE CANVAS AND TEXT END------------*/
+
+
+/*---------------ME------------*/
 
 .me_container {
-    width: 114px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 30%;
     float: right;
-    margin: 6px 10px;
+    margin: 6px 20px 0 20px;
+    -webkit-transform: skewY(5deg);
+    -ms-transform: skewY(5deg);
+    transform: skewY(5deg);
 }
+
+@media only screen and (min-width : 415px) and (max-width : 580px) {
+    .me_container {
+        width: 28%;
+        margin: 6px 20px 0 20px;
+    }
+}
+
+@media only screen and (min-width : 581px) and (max-width : 767px) {
+    .me_container {
+        width: 160px;
+        margin: 6px 30px 0 20px;
+    }
+}
+
+@media only screen and (min-width : 768px) {
+    .me_container {
+        width: 200px;
+        margin: 6px 50px 0 20px;
+    }
+}
+
+.footer_me {
+    width: 100%;
+}
+
+/*---------------ME END------------*/

@@ -15,7 +15,11 @@ export default class Footer extends Component {
                 <div className="footer_yellow-container">
                     
                     <div className="bubble_container">
-                            
+                        <div className="bubble_text">
+                            <div className="white">
+                                <p><strong>A survey to scan for speculators, and to submit a sample of the supplicant's stuff, whilst supressing the susceptibility to strut and swagger.</strong></p>
+                            </div>
+                        </div>  
                         <canvas
                             is="gwd-bezierpath" 
                             width="773" 
@@ -27,13 +31,7 @@ export default class Footer extends Component {
                             stroke-color="null" 
                             fill-color="[0,0.4470588235294118,0.7372549019607844,1]" 
                             geom-type="5">
-                                <div className="white">
-                                    <h2 class="gwd-p-1wbh"><strong>A Survey to</strong></h2>
-                                    <h2 class="gwd-p-1wbh"><strong>&nbsp;&nbsp;Expedite</strong></h2>
-                                    <h2 class="gwd-p-1wbh"><strong>&nbsp;&nbsp;&nbsp;&nbsp;Employment</strong></h2>
-                                </div>
                         </canvas>
-                        
                     </div>
                     
                     <div className="me_container">
