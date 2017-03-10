@@ -623,14 +623,15 @@ p:last-of-type {
 
 @media only screen and (min-width : 415px) and (max-width : 580px) {
     .bubble_text p {
-        font-size: 1.2em;
+         margin: -5px 1px 1px;
+        font-size: 1.6em;
     }
 }
 
 @media only screen and (min-width : 581px) and (max-width : 767px) {
     .bubble_text p {
-        margin: -5px 1px 1px;
-        font-size: 1.6em;
+        margin: 1px;
+        font-size: 1.54em;
     }
 }
 
