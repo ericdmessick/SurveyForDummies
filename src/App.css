@@ -638,7 +638,7 @@ p:last-of-type {
 @media only screen and (min-width : 768px) {
     .bubble_text p {
         margin: 1px;
-        font-size: 1.80em;
+        font-size: 2em;
         padding: 0px 14px;
     }
 }
