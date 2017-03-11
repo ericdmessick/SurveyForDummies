@@ -239,7 +239,7 @@
     width: 560px;
 }
 
-@media only screen and (max-width : 414px) {
+@media only screen and (max-width : 560px) {
    .App-survey {
         width: 100%;
     }
@@ -255,6 +255,10 @@
 }
 
 .sv_qcbc {
+    margin: 10px 0;
+}
+
+#sq_134 {
     margin: 10px 0;
 }
 
@@ -321,16 +325,34 @@ textarea[type=text] {
         padding-right: 0px !important;
     }
     
-    input[type=text], input[type=email] {
-        width: 100%;
+    input[type=text], input[type=email], textarea[type=text] {
+        width: 100% !important;
+    }
+}
+
+@media only screen and (min-width : 415px) {
+    .sv_q {
+        width: 372px !important;
+        padding-right: 0px !important;
+    }
+    
+    input[type=text], input[type=email], textarea[type=text] {
+        width: 372px !important;
     }
 }
 
 /*--------------END FORM STYLES---------------*/
 
 
+/*--------------KITTY AND PUPPY STYLES---------*/
 
+#sq_118, #sq_121 {
+    width: 100% !important;
+}
 
+.cutePic {
+    width: 100% !important;
+}
 
 /*--------------NAVIGATION STYLES---------------*/
 
@@ -358,12 +380,10 @@ p:last-of-type {
 
 /*--------------RATING PAGE STYLES---------------*/
 
-.cutePic {
-    max-width: 100%;
-}
 
 #sq_119, #sq_122 {
     margin-bottom: 10px;
+    width: 100% !important;
 }
 
 @media only screen and (max-width : 414px) {
@@ -406,10 +426,31 @@ p:last-of-type {
     -webkit-box-sizing: border-box;
 }
 
-@media only screen and (max-width : 414px) {
+@media only screen and (max-width : 426px) {
     .sv_q_rating_item {
-        padding: 3px 8px;
+        padding: 3px 5px;
         font-size: 12px;
+    }
+}
+
+@media only screen and (min-width : 427px) and (max-width : 490px) {
+    .sv_q_rating_item {
+        padding: 5px 9px;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width : 491px) and (max-width : 580px) {
+    .sv_q_rating_item {
+        padding: 5px 11px;
+        font-size: 13px;
+    }
+}
+
+@media only screen and (min-width : 581px) {
+    .sv_q_rating_item {
+        padding: 6px 12px;
+        font-size: 14px;
     }
 }
 

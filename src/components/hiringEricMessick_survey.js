@@ -434,9 +434,8 @@ var surveyJSON = {
     },
     {
      type: "rating",
-     name: "rateKitten",
-     title: "On a scale from 1 to 9, how guilty does this kitty make you feel?",
      isRequired: true,
+     name: "rateKitten",
      rateValues: [
       {
        value: "1",
@@ -453,7 +452,8 @@ var surveyJSON = {
        value: "9",
        text: "Bastet, forgive me!"
       }
-     ]
+     ],
+     title: "On a scale from 1 to 9, how guilty does this kitty make you feel?"
     }
    ],
    title: "Well, that's just plain mean.",
@@ -475,9 +475,8 @@ var surveyJSON = {
     },
     {
      type: "rating",
-     name: "ratePuppy",
-     title: "Can you seriously not hear Sarah Mclachlan singing right now?",
      isRequired: true,
+     name: "ratePuppy",
      rateValues: [
       {
        value: "1",
@@ -492,9 +491,10 @@ var surveyJSON = {
       "8",
       {
        value: "9",
-       text: "Ice cream crying."
+       text: "Ice cream crying"
       }
-     ]
+     ],
+     title: "Can you seriously not hear Sarah Mclachlan singing right now?"
     }
    ],
    title: "Oh, you're one of those \"dog people\", aren't ya?",
@@ -559,7 +559,7 @@ var surveyJSON = {
    questions: [
     {
      type: "html",
-     html: "<h3>First, click the link.</h3><p>But then, come right back and finish 'cause I didn't Javascript this piece.</p><a target=\"_blank\" href=\"\">To the GitHub</a>",
+     html: "<h3>First, click the link.</h3><p>But then, come right back and finish 'cause I didn't Javascript this piece.</p><a target=\"_blank\" href=\"https://github.com/ericdmessick/SurveyForDummies\">To the GitHub</a>",
      name: "gitLink"
     },
     {
@@ -652,7 +652,7 @@ var surveyJSON = {
    questions: [
     {
      type: "html",
-     html: "<h3>And good luck.</h3><p>Psst.  Click the link.</p><a target=\"_blank\" href=\"\">Here's the git</a>",
+     html: "<p>And good luck.</p><a target=\"_blank\" href=\"https://github.com/ericdmessick/SurveyForDummies\">Here's the git.</a></br>",
      name: "justGit"
     }
    ],
