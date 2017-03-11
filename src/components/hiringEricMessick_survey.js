@@ -205,7 +205,7 @@ var surveyJSON = {
    questions: [
     {
      type: "html",
-     html: "<div class=\"results_container\"><h3>Not that I'm a prize pig...</h3><p>But, this is exactly the foot-in-the-door I am looking for.</p>\n\n<p>If you'd like a copy of resume, you can <a href=\"https://surveyfordummies.herokuapp.com/ResumeforDummies2017Edition.pdf\" download>download it here.</a>\n\nAnd then, please send me a message.",
+     html: "<div class=\"results_container\"><h3>Not that I'm a prize pig...</h3><p>But, this is exactly the foot-in-the-door I am looking for.</p>\n\n<p>If you'd like a copy of resume, you can <a href=\"https://surveyfordummies.herokuapp.com/ResumeforDummies2017Edition.pdf\" download>download it here.</a>\n\n<p>And then, please send me a message.</p>",
      name: "youreAWinner"
     },
     {
