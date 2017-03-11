@@ -205,7 +205,7 @@ var surveyJSON = {
    questions: [
     {
      type: "html",
-     html: "<div class=\"results_container\"><h3>Not that I'm a prize pig...</h3><p>But, this is exactly the foot-in-the-door I am looking for.</p>",
+     html: "<div class=\"results_container\"><h3>Not that I'm a prize pig...</h3><p>But, this is exactly the foot-in-the-door I am looking for.</p>\n\n<p>If you'd like a copy of resume, you can <a href=\"https://surveyfordummies.herokuapp.com/ResumeforDummies2017Edition.pdf\" download>download it here.</a>\n\nAnd then, please send me a message.",
      name: "youreAWinner"
     },
     {
@@ -434,8 +434,9 @@ var surveyJSON = {
     },
     {
      type: "rating",
-     isRequired: true,
      name: "rateKitten",
+     title: "On a scale from 1 to 9, how guilty does this kitty make you feel?",
+     isRequired: true,
      rateValues: [
       {
        value: "1",
@@ -452,8 +453,7 @@ var surveyJSON = {
        value: "9",
        text: "Bastet, forgive me!"
       }
-     ],
-     title: "On a scale from 1 to 9, how guilty does this kitty make you feel?"
+     ]
     }
    ],
    title: "Well, that's just plain mean.",
@@ -465,7 +465,7 @@ var surveyJSON = {
    questions: [
     {
      type: "html",
-     html: "<h3><em>In the arms of the angel, Fly away from here...</br>From this dark, cold hotel room and the endlessness that you fear</em></h3>\n</br>",
+     html: "<h3><em>In the arms of the angel, fly away from here...</em></h3>\n</br>",
      name: "noGoodPuppy"
     },
     {
@@ -475,8 +475,9 @@ var surveyJSON = {
     },
     {
      type: "rating",
-     isRequired: true,
      name: "ratePuppy",
+     title: "Can you seriously not hear Sarah Mclachlan singing right now?",
+     isRequired: true,
      rateValues: [
       {
        value: "1",
@@ -493,8 +494,7 @@ var surveyJSON = {
        value: "9",
        text: "Ice cream crying."
       }
-     ],
-     title: "Can you seriously not hear Sarah Mclachlan singing right now?"
+     ]
     }
    ],
    title: "Oh, you're one of those \"dog people\", aren't ya?",
